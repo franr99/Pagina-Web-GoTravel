@@ -1,0 +1,219 @@
+body{
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   color: #333;
+   font-size: 1.2rem;
+   line-height: 1.6em;
+   margin: 0;
+}
+
+h1{
+    font-size: 2rem;
+    line-height: 1.3em;
+    text-align: center;
+}
+
+.h1-2{
+    color: #ffffff;
+}
+
+p{
+    margin-bottom: 1.6em;
+}
+
+
+.container{
+    width: 85%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+
+.header{
+    background: #333;
+    color:white;
+    padding: 2rem 0;
+
+    position: fixed;
+    left: 0;
+    top:0;
+    right:0;
+}
+
+    .header a{
+     color: white;
+        text-decoration: none;
+    }   
+
+.logo-nav-container{
+    display:flex; /* se acomodarse a diferentes tamaños de pantalla y diferentes dispositivos*/
+    justify-content: space-between; /* distribuye el primer elemento en la primera linea y el ultimo en la ultima linea, los elementos del medios se separan a la misma distancia*/
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo{
+    letter-spacing: 15px;
+    font-size: 1.2em;
+}
+.menu-icon{
+    display: none;
+}
+
+.boton-home{
+    background: #3498db;
+}
+.navigation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+    .navigation ul li{
+     display: inline-block;
+    }
+        .navigation ul li a{
+            display: block;
+            padding: 0.5rem 1rem;
+            transition: all 0.2s linear;
+            border-radius: 5px;
+        }
+            .navigation ul li a:hover {
+                background: #4a4a4a;
+            }
+.main{
+    padding-top:12rem;
+}
+
+.intro{
+    background-color: #333;
+}
+.slides{
+    padding: 20px 450px;
+}
+.destinos{
+    background-color: #ffffff;
+}
+
+.ciudad-destino{
+    
+    padding: 2rem 15rem;
+    list-style: none;
+    text-decoration: none;
+    color: #333;
+}
+
+    .ciudad-destino li{
+        display: inline-block;
+    }
+        .ciudad-destino li a{
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            display: block;
+            padding: 0.5rem 1rem;
+            transition: all 0.2s linear;
+            border-radius: 24px;
+            text-decoration: none;
+            color: #333;
+        }
+        .ciudad-destino li a:hover {
+            background: #4a4a4a;
+            color: white;
+        }
+            
+
+.info-reserva{
+    background-color:#3498db;
+}
+
+.footer{
+     background: #333333;
+     color: white;
+     padding: 2rem 0;
+     height: 300px;
+     text-align: center;
+     margin-top: 6rem;
+} 
+
+.sobre-nosotros{
+    float: left;
+    padding: 0 2em;
+    width: 500px;
+   
+}
+.telefono{
+    clear: left;
+    float: left;
+    padding: 2em;
+ 
+    
+}
+.menu-rapido{
+    
+    text-align: center;
+    padding: 0 2em;
+    margin-left: 50rem;
+    width: 300px;
+    
+}
+.menu-rapido ul{
+    list-style: none;
+    text-align: center;
+}
+.menu-rapido ul li{
+    text-align: center;
+}
+
+.menu-rapido ul li a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    
+}
+.redes-sociales{
+    
+    margin-left:100rem;
+    padding: 0 2em;
+    width: 200px;
+}
+.redes-sociales ul{
+    text-align: center;
+    list-style: none;
+}
+.redes-sociales ul li a{
+    text-decoration: none;
+    color: white;
+}
+ 
+@media only screen and (max-width: 767px){
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+    }
+    .navigation {
+
+        width: 100%;
+        margin-top: 1rem;
+    }
+        .navigation ul{
+            display:none;
+        }
+
+        .navigation ul.show{
+            display:block;
+        }
+    
+        .navigation ul li{
+         display: inline-block;
+        }
+            .navigation ul li a{
+                display: block;
+                padding: 0.5rem 1rem;
+                transition: all 0.2s linear;
+                border-radius: 5px;
+            }
+                .navigation ul li a:hover {
+                    background: #4a4a4a;
+                }
+ }
