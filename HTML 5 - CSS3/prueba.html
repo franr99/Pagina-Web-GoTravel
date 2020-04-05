@@ -7,6 +7,7 @@
         <meta name = "viewport" content="width=device-width, initial-scale=1.0">
         <title> Prueba </title>
         <link rel=stylesheet type="text/css" href="css/estilos.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
         
 
     </head>
@@ -32,8 +33,47 @@
 
         <main class="main">
             <section class="intro">
+
                 <div class="slides">
-                    
+                    <div class="booking-form-box">
+                        <div class="radio-btn">
+                            <input type="radio" class="btn" name="check" checked = "checked"><span>Ida y vuelta</span>`
+                            <input type="radio" class="btn" name="check"><span>Solo ida</span>
+                            <input type="radio" class="btn" name="check"><span>Muliples destinos</span>
+                        </div>
+                        <div class="booking-form">
+                            <label> Origen</label>
+                            <input type="text" class="form-control" placeholder="Ciudad o aeropuerto de origen">
+                            <label> Destino</label>
+                            <input type="text" class="form-control" placeholder="Ciudad o aeropuerto de destino">
+                            
+                        </div>
+
+                        <div class="input-grp">
+                            <label class="datosreserva"> Fecha de salida</label>
+                            <input type="date" class="form-control select-date" >
+                            <label class="datosreserva"> Fecha de regreso</label>
+                            <input type="date" class="form-control select-date" >
+                            <label class="datosreserva"> Adultos</label>
+                            <input type="number" class="form-control" value="0">
+                            <label class="datosreserva"> Niños</label>
+                            <input type="number" class="form-control" value="0">
+                            <label class="datosreserva"> Clase</label>
+
+                            <select class="custom-select">
+                            <option value="1">Clase turista</option>
+                            <option value="2">Turista premium</option>
+                            <option value="3">Business</option>
+                            <option value="4">Primera</option>
+                            <option value="5">Avion privado</option>
+                            </select>
+                        </div>
+                        <div class="input-grp">
+                            <button type="button" class="btn btn-primary flight"> Mostrar vuelos</button>
+                        </div>
+
+                    </div>    
+
                     <img src="img/tokyo.jpg">
                     
                 </div>
