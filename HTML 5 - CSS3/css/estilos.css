@@ -90,7 +90,8 @@ p{
 
 .booking-form-box{
     max-width: 500px;
-    border: 1px solid rgb(15, 207, 233);
+    border: 2px solid rgb(15, 207, 233);
+    border-radius: 5px ;
     margin: 0;
     margin-right: 5%;
     float: right;
