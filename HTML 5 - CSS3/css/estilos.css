@@ -276,8 +276,6 @@ input::placeholder{
     padding: 0 2em;
     margin-left: 50rem;
     width: 300px;
-    
-    
 }
 .menu-rapido ul{
     list-style: none;
@@ -294,7 +292,7 @@ input::placeholder{
     
 }
 .redes-sociales{
-    margin-top: auto;
+    margin-top: -155px;
     margin-left: 90rem;
     padding: 0 2em;
     width: 300px;
