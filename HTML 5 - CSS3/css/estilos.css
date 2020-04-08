@@ -137,6 +137,11 @@ p{
 .info-reserva{
     background-color:#3498db;
 }
+.info-reserva p{
+    text-align: center;
+    padding-left: 8%;
+    padding-right: 8%;
+}
 
 .footer{
      background: #333333;
