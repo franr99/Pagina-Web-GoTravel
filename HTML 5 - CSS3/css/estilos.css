@@ -1,9 +1,11 @@
 body{
-   font-family: Georgia, 'Times New Roman', Times, serif;
-   color: #333;
-   font-size: 1.2rem;
-   line-height: 1.6em;
-   margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.6em;
+    width: 100%;
+    height: 100%;
+    
 }
 
 h1{
@@ -22,8 +24,8 @@ p{
 
 
 .container{
-    width: 85%;
-    max-width: 850px;
+    width: 100%;
+    
     margin: 0 auto;
 }
 
@@ -144,61 +146,54 @@ p{
 }
 
 .footer{
-     background: #333333;
-     color: white;
-     padding: 2rem 0;
-     height: 300px;
-     text-align: center;
-     margin-top: 6rem;
+    background: #333333;
+    color: white;
+    padding: 2rem 0;
+    height: 200px;
+    text-align: center;
+    margin-top: 6rem;
 } 
 
 .sobre-nosotros{
-    float: left;
-    padding: 0 2em;
-    width: 500px;
-   
-}
-.telefono{
-    clear: left;
-    float: left;
-    padding: 2em;
- 
-    
+   float: left;
+   padding: 0 2em;
+   width: 500px;
+  
 }
 .menu-rapido{
-    
-    text-align: center;
-    padding: 0 2em;
-    margin-left: 50rem;
-    width: 300px;
+   
+   text-align: center;
+   padding: 0 2em;
+   margin-left: 50rem;
+   width: 300px;
 }
 .menu-rapido ul{
-    list-style: none;
-    text-align: center;
+   list-style: none;
+   text-align: center;
 }
 .menu-rapido ul li{
-    text-align: center;
+   text-align: center;
 }
 
 .menu-rapido ul li a{
-    text-decoration: none;
-    text-align: center;
-    color: white;
-    
+   text-decoration: none;
+   text-align: center;
+   color: white;
+   
 }
 .redes-sociales{
-    margin-top: -155px;
-    margin-left: 90rem;
-    padding: 0 2em;
-    width: 300px;
+   margin-top: -155px;
+   margin-left: 90rem;
+   padding: 0 2em;
+   width: 300px;
 }
 .redes-sociales ul{
-    text-align: center;
-    list-style: none;
+   text-align: center;
+   list-style: none;
 }
 .redes-sociales ul li a{
-    text-decoration: none;
-    color: white;
+   text-decoration: none;
+   color: white;
 }
  
 @media only screen and (max-width: 767px){
