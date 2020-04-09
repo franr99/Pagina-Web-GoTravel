@@ -1,0 +1,28 @@
+.buscador-hotel{
+    background-color: #333;
+    width: 25%;
+    height: 70px;
+    border: 2px solid rgb(15, 207, 233);
+    border-radius: 10px ;
+    margin-left: 36%;
+}
+
+.caja-buscador{
+    border-radius: 20px;
+    border: 2px solid rgb(15, 207, 233);
+    margin: 18px;
+    padding-left: 10px;
+    width: 70%;
+}
+
+.boton-hotel{
+    width: 20% !important;
+    height: 30px;
+    color: white;
+    font-size: 16px !important;
+    border: 1px solid #1B9EDF !important;
+    border-radius: 8px !important;
+    background-color: #51C0FC !important;
+    margin-right: 20px;
+    
+}
