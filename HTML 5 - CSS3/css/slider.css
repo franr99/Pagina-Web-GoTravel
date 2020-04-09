@@ -1,18 +1,17 @@
+
 .slider-auto{
-    max-width: 500px;
-    margin: auto;
+    width: 1000px;
     overflow: hidden;
-    float: left;
+    padding-bottom: 0;
+    margin: auto;
 }
 
 .slider-auto ul{
     display: flex;
     padding: 0;
-    width: 200%;
+    width: 400%;
 
-    animation: cambio 20s infinite;
-    animation-direction: alternate;
-
+    animation: cambio 20s infinite alternate;
 }
 
 .slider-auto li{
@@ -26,7 +25,7 @@
 
 @keyframes cambio{
     0% { margin-left: 0;}
-    20%{margin-left: 0;}
+    20%{ margin-left: 0;}
 
     25%{margin-left: -100%;}
     45%{margin-left: -100%;}
