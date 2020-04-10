@@ -1,6 +1,7 @@
 
 .slider-auto{
-    width: 1000px;
+    width: 50% !important;
+    height: 650px !important;
     overflow: hidden;
     padding-bottom: 0;
     margin: auto;
@@ -15,12 +16,14 @@
 }
 
 .slider-auto li{
-    width: 100%;
+    width: 80%;
+    height: 80%;
     list-style: none;
 }
 
 .slider img {
-    width: 100%;
+    width: 80% !important;
+    height: 50% !important;
 }
 
 @keyframes cambio{

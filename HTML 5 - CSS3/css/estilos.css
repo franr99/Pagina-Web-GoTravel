@@ -2,7 +2,7 @@ body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #333;
     font-size: 1.2rem;
-    line-height: 1.6em;
+    line-height: 1.3em;
     width: 100%;
     height: 100%;
     
@@ -25,7 +25,6 @@ p{
 
 .container{
     width: 100%;
-    
     margin: 0 auto;
 }
 
@@ -42,7 +41,8 @@ p{
 }
 
     .header a{
-     color: white;
+        color: white;
+        font-size: 18px;
         text-decoration: none;
     }   
 
@@ -83,7 +83,7 @@ p{
                 background: #4a4a4a;
             }
 .main{
-    padding-top:12rem;
+    padding-top:10rem;
 }
 
 .intro{
