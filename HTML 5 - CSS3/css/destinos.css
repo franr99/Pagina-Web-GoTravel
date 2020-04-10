@@ -144,6 +144,10 @@ padding-top:10rem;
 
 }
 
+.ofertas:hover{
+    background-color: #D5E8F4;
+}
+
 .descripcion{
     font-size: 12px;
     color: #1B9EDF;
@@ -214,7 +218,7 @@ padding-top:10rem;
 }
 
 .redes-sociales{
-    margin-top: -12.5rem;
+    margin-top: -10.7rem;
     margin-left: 100rem;
     padding: 0 2em;
     width: 300px;
