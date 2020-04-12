@@ -1,7 +1,7 @@
 
 .slider-auto{
     width: 60% !important;
-    height: 100% !important;
+    height: 40em;
     overflow: hidden;
     margin: auto;
     margin-left: 10%;
@@ -23,6 +23,7 @@
 }
 
 .slider img {
+    
     width: 60% !important;
     height: 45% !important;
 }
