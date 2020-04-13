@@ -9,8 +9,190 @@
 }
 
 .fondoMenu{
+
     width: 100%;
     height: auto;
     border-radius: 1px ;
     border-color: black;
+}
+
+.compañias{
+    width: 60%;
+    height: 16rem;
+    background-color: #ADE0F6;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 20px;
+    
+}
+
+h1{
+    font-size: 4rem;
+    padding-top: 1rem;
+    line-height: 1rem;
+    text-align: center;
+}
+
+.listaCompañias{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1%;
+}
+
+.listaCompañias li{
+
+    display: inline-block;
+    margin-left: 4%;
+    margin-right: 4%;
+    
+}
+
+.compañia_img{
+    width: 150px;
+    height: 150px;
+    border-radius: 40px;
+
+    
+
+}
+
+.seccionOfertas {
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: auto;
+    background-color: #F5F0EE;
+    height: 82em;
+
+}
+
+.seccionOfertas h2{
+    color: #51C0FC;
+    margin-left: 5%;
+    
+}
+
+.seccionOfertas h4{
+    color: #1B9EDF;
+    margin-left: 5%;
+}
+
+.seccionOfertas p{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.listaOfertas li{
+    display: block;
+    float: left;
+    
+}
+
+.ofertas{
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 2%;
+    background-color: #FFFBF3;
+    width: 17%;
+    height: 30rem;
+    border: 3px solid #F4F7F9;
+    border-radius: 5%;
+    /*box-shadow: black 1px 1px 1px;*/
+
+}
+
+.ofertas:hover{
+    border-color: #51C0FC;
+}
+
+.descripcion{
+    font-size: 14px;
+    color: #1B9EDF;
+}
+
+.duracion{
+    font-size: 14px;
+    color: #333;
+}
+
+.imagen{
+    width: 95%;
+    height: 150px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: 3%;
+    
+}
+
+.btnOferta{
+    width: 50% !important;
+    height: 3em !important;
+    
+    font-size: 16px !important;
+    border: 1px solid #1B9EDF !important;
+    box-shadow: #1B9EDF 1px 1px 2px !important;
+    border-radius: 8px !important;
+    background-color: #51C0FC !important;
+    margin-left: 40% !important;
+    margin-bottom: 3rem !important;
+    
+}
+
+.footer{
+    background: #333333;
+    color: white;
+    
+    height: 220px;
+    text-align: center;
+    margin-top: 2rem;
+} 
+
+.footer h2{
+    margin-top: 5%;
+
+}
+
+.sobre-nosotros{
+    margin-top: -0.5%;
+    float: left;
+    padding-top: 0.1%;
+    width: 30%;
+}
+
+.menu-rapido{
+
+    padding-top: 0.1%;
+    text-align: center;
+    margin-left: 50rem;
+    width: 20%;
+}
+
+.menu-rapido ul li{
+   text-align: center;
+   list-style: none;
+}
+
+.menu-rapido ul li a{
+   text-decoration: none;
+   text-align: center;
+   color: white;
+   
+}
+
+.redes-sociales{
+    margin-top: -10.7rem;
+    margin-left: 100rem;
+    padding: 0 2em;
+    width: 300px;
+
+}
+.redes-sociales ul{
+    text-align: center;
+    list-style: none;
+}
+.redes-sociales ul li a{
+    text-decoration: none;
+    color: white;
 }
