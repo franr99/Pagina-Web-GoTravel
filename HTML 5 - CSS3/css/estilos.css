@@ -138,11 +138,28 @@ p{
 
 .info-reserva{
     background-color:#3498db;
+    height: 15em;
+    background: -moz-linear-gradient(top, #3498db, #51C0FC); /*gradiente que empieza arriba entre 2 colores*/
+    background: -webkit-linear-gradient(top, #3498db 1%, #51C0FC);
+    
 }
-.info-reserva p{
+
+.bio-reserva{
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: #51C0FC;
+    height: 10em;
+    
+}
+
+.bio-reserva p{
     text-align: center;
     padding-left: 8%;
     padding-right: 8%;
+    padding-top: 2%;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
 }
 
 .footer{
@@ -157,7 +174,7 @@ p{
 .sobre-nosotros{
    float: left;
    padding: 0 2em;
-   width: 500px;
+   width: 550px;
   
 }
 .menu-rapido{
