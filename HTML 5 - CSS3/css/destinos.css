@@ -101,7 +101,7 @@ padding-top:10rem;
     margin-right: 5%;
     margin-bottom: auto;
     background-color: #F5F0EE;
-    height: 75rem;
+    height: 82em;
 
 }
 
@@ -137,7 +137,7 @@ padding-top:10rem;
     margin-bottom: 2%;
     background-color: #FFFBF3;
     width: 17%;
-    height: 32rem;
+    height: 30rem;
     border: 3px solid #F4F7F9;
     border-radius: 5%;
     /*box-shadow: black 1px 1px 1px;*/
@@ -164,8 +164,8 @@ padding-top:10rem;
 
 .btnOferta{
     width: 50% !important;
-    height: 40px !important;
-    padding-top: -40px !important;
+    height: 3em !important;
+    
     font-size: 16px !important;
     border: 1px solid #1B9EDF !important;
     box-shadow: #1B9EDF 1px 1px 2px !important;
