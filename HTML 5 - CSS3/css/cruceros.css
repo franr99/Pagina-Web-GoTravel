@@ -1,0 +1,16 @@
+.header{
+    background: rgb(15, 207, 233);
+    color:white;
+    padding: 2rem 0;
+    position: fixed;
+    left: 0;
+    top:0;
+    right:0;
+}
+
+.fondoMenu{
+    width: 100%;
+    height: auto;
+    border-radius: 1px ;
+    border-color: black;
+}
