@@ -26,3 +26,141 @@
     margin-right: 20px;
     
 }
+
+.main{
+    padding-top:10rem;
+    }
+    
+    .seccionHoteles {
+        margin-top: 2%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: auto;
+        background-color: #F5F0EE;
+        height: 112em;
+    
+    }
+    
+    .seccionHoteles h2{
+        color: #51C0FC;
+        margin-left: 5%;
+        
+    }
+    
+    .seccionHoteles h4{
+        color: #1B9EDF;
+        margin-left: 5%;
+    }
+    
+    .seccionHoteles p{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    .listaHoteles li{
+        display: block;
+        float: left;
+        
+    }
+    
+    .hoteles{
+        margin-left: 1%;
+        margin-right: 1%;
+        margin-bottom: 2%;
+        background-color: #FFFBF3;
+        width: 17%;
+        height: 30rem;
+        border: 3px solid #F4F7F9;
+        border-radius: 5%;
+        /*box-shadow: black 1px 1px 1px;*/
+    
+    }
+    
+    .hoteles:hover{
+        border-color: #51C0FC;
+    }
+    
+    .descripcion{
+        font-size: 12px;
+        color: #1B9EDF;
+    }
+    
+    .imagen{
+        width: 95%;
+        height: 150px;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        margin-top: 3%;
+        
+    }
+    
+    .btnHotel{
+        width: 50% !important;
+        height: 3em !important;
+        
+        font-size: 16px !important;
+        border: 1px solid #1B9EDF !important;
+        box-shadow: #1B9EDF 1px 1px 2px !important;
+        border-radius: 8px !important;
+        background-color: #51C0FC !important;
+        margin-left: 40% !important;
+        margin-bottom: 3rem !important;
+        
+    }
+    
+    .footer{
+        background: #333333;
+        color: white;
+        
+        height: 220px;
+        text-align: center;
+        margin-top: 2rem;
+    } 
+    
+    .footer h2{
+        margin-top: 5%;
+    
+    }
+    
+    .sobre-nosotros{
+        margin-top: -0.5%;
+        float: left;
+        padding-top: 0.1%;
+        width: 30%;
+    }
+    
+    .menu-rapido{
+    
+        padding-top: 0.1%;
+        text-align: center;
+        margin-left: 50rem;
+        width: 20%;
+    }
+    
+    .menu-rapido ul li{
+       text-align: center;
+       list-style: none;
+    }
+    
+    .menu-rapido ul li a{
+       text-decoration: none;
+       text-align: center;
+       color: white;
+       
+    }
+    
+    .redes-sociales{
+        margin-top: -10.7rem;
+        margin-left: 100rem;
+        padding: 0 2em;
+        width: 300px;
+    
+    }
+    .redes-sociales ul{
+        text-align: center;
+        list-style: none;
+    }
+    .redes-sociales ul li a{
+        text-decoration: none;
+        color: white;
+    }
