@@ -34,17 +34,48 @@
                 <img src="img/berlin_des.jpg" class="imagen">
                 <h1> Berlin</h1>
                 <div class="itinerario">
-                    <label class="titulos"> Origen</label>
+                    
+                    <label class="datosreserva"> Origen</label>
                     <input type="text" class="form-control" placeholder="Ciudad o aeropuerto de origen">
-                    <label class="titulos"> Fecha de salida</label>
-                    <input type="date" class="form-control select-date" >
-                    <label class="titulos"> Fecha de regreso</label>
-                    <input type="date" class="form-control select-date" >
-                    <label class="titulos"> Adultos</label>
-                    <input type="number" class="form-control" value="0">
-                    <label class="titulos"> Niños</label>
-                    <input type="number" class="form-control" value="0">
-                        
+                    <label class="datosreserva"> Fecha de salida</label>
+                    <input type="date" class="select-date" >
+                    <label class="datosreserva"> Fecha de regreso</label>
+                    <input type="date" class="select-date" >
+                    <label class="datosreserva"> Adultos</label>
+                    <input type="number" class="select-number" value="0">
+                    <label class="datosreserva"> Niños</label>
+                    <input type="number" class="select-number" value="0">
+                    <label class="datosreserva"> Clase</label>
+                    
+                    <select class="custom-select">
+                        <option value="1">Clase turista</option>
+                        <option value="2">Turista premium</option>
+                        <option value="3">Business</option>
+                        <option value="4">Primera</option>
+                    </select>         
+                </div>
+                <div class="compañias">
+                    <h4> Compañias aéreas</h4>
+                    <ul>
+                        <li><img src="img/ryanair.png" ></li>
+                        <li><img src="img/iberia.png" ></li>
+                        <li><img src="img/vueling.jpg" ></li>
+                        <li><img src="img/air_europa.png" ></li>
+
+                    </ul>
+                </div>
+                <div class="vuelos">
+                    <h3> Madrid Berlin con Ryanair</h3>
+                    <p> Para salidas el sábado, 23 de mayo de 2020 hasta el miércoles, 27 de mayo de 2020</p>
+                    <button type="button" class="boton"> Reservar</button>
+                </div>
+
+                <div class="vuelos">
+                    <h3> Madrid Berlin con Iberia</h3>
+                    <p> Para salidas el viernes, 12 de junio de 2020 hasta el martes, 16 de junio de 2020</p>
+                    <button type="button" class="boton"> Reservar</button>
+                </div>
+        </div>
         </section>
 
     </main>
