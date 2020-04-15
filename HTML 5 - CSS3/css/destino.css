@@ -1,0 +1,56 @@
+.info-destino{
+    margin-left: 20%;
+    margin-right: 20%;
+    height: 30em;
+    width: 60%;
+    background-color: #F5F0EE;
+    
+}
+
+.imagen{
+    width: 45%;
+    height: 20em;
+}
+
+.info-destino h1{
+    font-style: italic;
+    font-size: 40px;
+    float: right;
+    padding-right: 7em;
+
+}
+
+.itinerario{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: -28%;
+    height: 20em;
+    width: 43%;
+    float: right;
+    background-color: #fff;
+}
+
+.itinerario h3{
+    float: left;
+    padding-left: 2em;
+}
+
+.titulos{
+    position: sticky;
+    float: left;
+    margin-left: 1em !important;
+    margin-top: 1em !important;
+}
+
+.form-control{
+    margin-top: 4em !important;
+    margin-left: -4em !important;
+    width: 20em;
+    height: 2em;
+    border-radius: 2px !important;
+    color: #fff !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    border-radius: 5px !important;
+    
+}
