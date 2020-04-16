@@ -1,7 +1,7 @@
 .info-destino{
     margin-left: 20%;
     margin-right: 20%;
-    height: 40em;
+    height: 50em;
     width: 60%;
     background-color: #F5F0EE;
     
@@ -46,6 +46,17 @@
 .itinerario h3{
     float: left;
     padding-left: 2em;
+}
+
+.boton_reserva{
+    margin-right: 1em;
+    margin-top: -0.5em;
+    height: 3em;
+    width: 8em;
+    float: right;
+    background-color: rgb(15, 207, 233);
+    border: 1px solid #1B9EDF;
+    border-radius: 5px;
 }
 
 .form-control{
@@ -104,11 +115,18 @@
 }
 
 .compañias{
-    width: 200px;
-    height: 200px;
+    width: 15em;
+    height: 8em;
     margin-left: 3%;
-    margin-right: 12%;
+    margin-right: 8%;
     float: right;
+}
+
+.compañias h4{
+    text-align: center;   
+    font-size: 22px;
+    font-weight: 600;
+    color: #1B9EDF;
 }
 
 .compañias li{
@@ -131,21 +149,47 @@
 
 }
 
-.vuelos h3{
-    font-size: 20px;
+h3{
+    font-size: px;
     color: #1B9EDF;
     margin-left: 0.5em;
     padding-top: 0.3em;
 }
 
-.vuelos p{
+p{
     margin-left: 0.5em;
     font-size: 14px;
     margin-top: -0.5em;
 }
 
-.boton{
-    margin-top: -3.5em;
+.boton_vuelos{
+    margin-top: -2.5em;
     margin-right: 1em;
+    height: 2em;
+    width: 6em;
     float: right;
+    background-color: rgb(15, 207, 233);
+    border: 1px solid #1B9EDF;
+    border-radius: 5px;
+    
+}
+
+.boton_paquetes{
+    margin-top: -1em;
+    margin-right: 1em;
+    height: 2em;
+    width: 6em;
+    float: right;
+    background-color: rgb(15, 207, 233);
+    border: 1px solid #1B9EDF;
+    border-radius: 5px;
+}
+
+.paquetes{
+    width: 22em;
+    height: 10em;
+    background-color: white;
+    float: right;
+    margin-right: 2em;
+    margin-top: -10em;
 }
