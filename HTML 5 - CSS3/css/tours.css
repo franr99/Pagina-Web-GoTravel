@@ -1,0 +1,64 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.3em;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.fondoMenu{
+    
+    width: 100%;
+    height: auto;
+    border-radius: 1px ;
+    border-color: black;
+}
+
+
+.texto-img {
+    color:#ffffff;
+    margin-top: -7%;
+
+}
+
+.texto-img h1{
+    text-align: left;
+    padding-left: 2em;
+    font-size: 7vw;
+    font-family: 'lobster', cursive;
+}
+
+.menu-img .tours-iconos{
+    
+    padding: 2rem 40%;
+    padding-left: 66.5em;
+    list-style: none;
+    text-decoration: none;
+    color: #333;
+}
+
+    .menu-img .tours-iconos li{
+        display: inline-block;
+        background-color: #3498db;
+        margin: 0.3em;
+        max-width: 145px;
+        max-height: 120px;
+    }
+        .tours-iconos li img{
+            width: 125px;
+            height: 100px;
+            text-align: center;
+            display: block;
+            padding: 0.5rem 1rem;
+            transition: all 0.2s linear;
+            text-decoration: none;
+            color: #333;
+            margin-left: 10px;
+        }
+        .tours-iconos li img:hover {            
+            transform: scale(1.2,1.2);
+
+        }
+
