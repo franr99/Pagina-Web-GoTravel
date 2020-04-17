@@ -41,7 +41,8 @@ body{
 
     .menu-img .tours-iconos li{
         display: inline-block;
-        background-color: #3498db;
+        background: -moz-linear-gradient(top, #3498db, #51C0FC); /*gradiente que empieza arriba entre 2 colores*/
+        background: -webkit-linear-gradient(top, #3498db 1%, #51C0FC);
         margin: 0.3em;
         max-width: 145px;
         max-height: 120px;
@@ -62,3 +63,106 @@ body{
 
         }
 
+.excursion{
+    margin-bottom: 5%;
+}
+
+.historia{
+    margin-bottom: 5%
+}
+.excursion .titulo-excursion{
+    margin-left: 5em;
+    width: 15%;
+    height: 15%;
+    background: -moz-linear-gradient(top, #3498db, #51C0FC); /*gradiente que empieza arriba entre 2 colores*/
+    background: -webkit-linear-gradient(top, #3498db 1%, #51C0FC);
+
+}
+    .titulo-excursion img{
+        width: 75px;
+        height: 62px;
+
+    }
+    .titulo-excursion h1{
+        
+        padding-right: 20%;
+        padding-top: 2.2%;
+        font-size: 1.2vw;
+        font-family: 'lobster', cursive;
+        color: white;
+        float: right;
+    }
+
+    .contenedor{
+
+        background-color: #F5F0EE;
+
+    }
+
+
+    .contenedor .contenido li{
+        display: inline-block;
+        text-decoration: none;
+        list-style: none;
+        width: 220px;
+        height: 170px;
+    }
+        .contenido li img{
+            width: 220px;
+            height: 170px;
+            padding: 0.5rem 1rem;
+            transition: all 0.2s linear;
+            text-decoration: none;
+            list-style: none;
+           
+        }
+        .contenido li img:hover {            
+            transform: scale(1.2,1.2);
+
+        }
+
+.historia .titulo-historia{
+            margin-left: 5em;
+            width: 17%;
+            height: 15%;
+            background: -moz-linear-gradient(top, #3498db, #51C0FC); /*gradiente que empieza arriba entre 2 colores*/
+            background: -webkit-linear-gradient(top, #3498db 1%, #51C0FC);
+        
+        }
+            .titulo-historia img{
+                width: 75px;
+                height: 62px;
+        
+            }
+            .titulo-historia h1{
+                
+                padding-right: 16%;
+                padding-top: 2.2%;
+                font-size: 1.2vw;
+                font-family: 'lobster', cursive;
+                color: white;
+                float: right;
+            }
+        
+.aventura .titulo-aventura{
+
+    margin-left: 5em;
+    width: 18%;
+    height: 15%;
+    background: -moz-linear-gradient(top, #3498db, #51C0FC); /*gradiente que empieza arriba entre 2 colores*/
+    background: -webkit-linear-gradient(top, #3498db 1%, #51C0FC);
+    }
+    .titulo-aventura img{
+        width: 75px;
+        height: 62px;
+                
+    }
+    .titulo-aventura h1{
+        padding-right: 9%;
+        padding-top: 2.2%;
+        font-size: 1.2vw;
+        font-family: 'lobster', cursive;
+        color: white;
+        float: right;
+     }
+                
