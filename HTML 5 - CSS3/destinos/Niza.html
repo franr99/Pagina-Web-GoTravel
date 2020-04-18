@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang = "es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <title> Destinos </title>
+        <link rel=stylesheet type="text/css" href="../css/destinos.css">
+        <link rel=stylesheet type="text/css" href="../css/destino.css">
+    </head>
+    <body>
+        <main class="main">
+        <header class="header">
+
+            <div class="container logo-nav-container">
+                <a href="#" class="logo">LOGO</a>
+                <span class="menu-icon">Ver menú</span>
+                <nav class="navigation">
+                    <ul>
+                        <li><a class="boton-home" href="../prueba.html">Home</a></li>
+                        <li><a href="../destinos.html">Destinos</a></li>
+                        <li><a href="../hoteles.html">Hoteles</a></li>
+                        <li><a href="../cruceros.html">Cruceros</a></li>
+                        <li><a href="#">Tours</a></li>
+                        <li><a href="#">Guias</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section class="destino">
+            <div class="info-destino">
+                <img src="../img/niza_des.jpg" class="imagen">
+                <h1> Niza</h1>
+                <div class="itinerario">
+                    
+                    <label class="datosreserva"> Origen</label>
+                    <input type="text" class="form-control" placeholder="Ciudad o aeropuerto de origen">
+                    <label class="datosreserva"> Fecha de salida</label>
+                    <input type="date" class="select-date" >
+                    <label class="datosreserva"> Fecha de regreso</label>
+                    <input type="date" class="select-date" >
+                    <label class="datosreserva"> Adultos</label>
+                    <input type="number" class="select-number" value="0">
+                    <label class="datosreserva"> Niños</label>
+                    <input type="number" class="select-number" value="0">
+                    <label class="datosreserva"> Clase</label>
+                    
+                    <select class="custom-select">
+                        <option value="1">Clase turista</option>
+                        <option value="2">Turista premium</option>
+                        <option value="3">Business</option>
+                        <option value="4">Primera</option>
+                    </select>   
+                    <button type="button" class="boton_reserva"> Buscar</button>
+                </div>
+                <div class="compañias">
+                    <h4> Compañias</h4>
+                    <ul>
+                        <li><a href="https://www.vueling.com/es"><img src="../img/vueling.jpg" ></a></li>
+                        <li><a href="https://www.ryanair.com/es/es"><img src="../img/ryanair.png" ></a></li>
+                        <li><a href="https://www.costacruceros.es/"><img src="../img/costa_cruceros.jpg" ></a></li>
+
+                    </ul>
+                </div>
+                <div class="vuelos">
+                    <h3> Visita Niza con Vueling desde 100€</h3>
+                    <p> Salidas desde Madrid el 23/05/2020 hasta el 27/05/2020</p>
+                    <button type="button" class="boton_vuelos"> Reservar</button>
+                </div>
+
+                <div class="vuelos">
+                    <h3> Visita Niza con Ryanair desde 90€</h3>
+                    <p> Salidas desde Madrid o Barcelona el 29/05/2020 hasta el 2/06/2020</p>
+                    <button type="button" class="boton_vuelos"> Reservar</button>
+                </div>
+
+                <div class="vuelos">
+                    <h3> Visita Niza con Costa cruceros desde 600€</h3>
+                    <p> 8 días, salida desde Valencia, 11/08/2020</p>
+                    <button type="button" class="boton_vuelos"> Reservar</button>
+                </div>
+
+                <div class="paquetes">
+                    <h3> Paquete vuelo + hotel por 700€</h3>
+                    <p>Incluye vuelo con Vueling más la estancia en Hotel Saint Gothard. Salida desde Madrid el día 23/05/2020 a las 9:00 y vuelta el día 27/05/2020 a las 17:00.</p>
+                    <button type="button" class="boton_paquetes"> Reservar</button>
+                </div>
+        </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <div class="sobre-nosotros">
+            <h2>Sobre Nosotros</h2>
+            <p>Somos un grupo de estudiantes de la universidad UCAM y hemos realizado
+                esta página web como práctica final de la asigntura de Programación Web
+            </p>
+        </div>
+        
+        <div class="menu-rapido">
+            <h2>Menu rápido</h2>
+            <ul>
+                <li><a href="#">Sobre nosotros</a></li>
+                <li><a href="#">Términos y condiciones</a></li>
+                <li><a href="#">Política de cookies</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+
+        </div>
+        <div class="redes-sociales">
+            <h2>Redes sociales</h2>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Youtube</a></li>
+            </ul>
+        </div>
+        
+    </footer>
+</body>
+</html>
