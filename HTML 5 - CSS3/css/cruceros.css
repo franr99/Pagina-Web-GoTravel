@@ -1,17 +1,8 @@
-.header{
-    background: rgb(15, 207, 233);
-    color:white;
-    padding: 2rem 0;
-    position: fixed;
-    left: 0;
-    top:0;
-    right:0;
-}
-
 .fondoMenu{
 
     width: 100%;
     height: auto;
+
     border-radius: 1px ;
     border-color: black;
 }
@@ -67,7 +58,7 @@ h1{
     margin-right: 5%;
     margin-bottom: auto;
     background-color: #F5F0EE;
-    height: 82em;
+    height: 67em;
 
 }
 

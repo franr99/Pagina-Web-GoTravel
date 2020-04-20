@@ -9,6 +9,7 @@
         <link rel=stylesheet type="text/css" href="css/estilos.css">
         <link rel=stylesheet type="text/css" href="css/reserva.css">
         <link rel=stylesheet type="text/css" href="css/slider.css">
+        <link rel=stylesheet type="text/css" href="css/navegador.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 
     </head>
@@ -25,7 +26,6 @@
                         <li><a href="hoteles.html">Hoteles</a></li>
                         <li><a href="cruceros.html">Cruceros</a></li>
                         <li><a href="tours.html">Tours</a></li>
-                        <li><a href="#">Guias</a></li>
                     </ul>
                 </nav>
             </div>
@@ -46,9 +46,9 @@
                         </div>
                         <div class="booking-form">
                             <label> Origen</label>
-                            <input type="text" class="form-control" placeholder="Ciudad o aeropuerto de origen">
+                            <input type="text" id="idOrigen" class="form-control" placeholder="Ciudad o aeropuerto de origen">
                             <label> Destino</label>
-                            <input type="text" class="form-control" placeholder="Ciudad o aeropuerto de destino">
+                            <input type="text" id="idDestino" class="form-control" placeholder="Ciudad o aeropuerto de destino">
                             
                         </div>
 
@@ -71,7 +71,7 @@
                             </select>
                         </div>
                         <div class="input-grp">
-                            <button type="button" class="btn btn-primary flight"> Buscar</button>
+                            <button type="button" id="btBuscar" class="btn btn-primary flight"> Buscar</button>
                         </div>
 
                     </div>  
