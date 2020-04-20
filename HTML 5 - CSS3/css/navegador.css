@@ -1,0 +1,175 @@
+h1{
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.3em;
+    text-align: center;
+}
+
+.h1-2{
+    color: #ffffff;
+}
+
+p{
+    margin-bottom: 1.6em;
+}
+
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main{
+    padding-top:10rem;
+}
+
+.slides{
+    padding-left: 5%;
+}
+
+.header{
+    background: rgb(15, 207, 233);
+    color:white;
+    padding: 2rem 0;
+    position: fixed;
+    left: 0;
+    top:0;
+    right:0;
+}
+
+.header a{
+        color: white;
+        font-size: 18px;
+        text-decoration: none;
+}   
+
+.logo-nav-container{
+    display: flex; /* se acomodarse a diferentes tamaños de pantalla y diferentes dispositivos*/
+    justify-content: space-between; /* distribuye el primer elemento en la primera linea y el ultimo en la ultima linea, los elementos del medios se separan a la misma distancia*/
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.logo{
+    letter-spacing: 15px;
+    font-size: 1.2em;
+}
+.menu-icon{
+    display: none;
+}
+
+.boton-home{
+    background: #3498db;
+}
+.navigation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    float: left;
+}
+
+    .navigation ul li{
+     display: inline-block;
+    }
+        .navigation ul li a{
+            
+            display: block;
+            padding: 0.5rem 1rem;
+            transition: all 0.2s linear;
+            border-radius: 5px;
+        }
+            .navigation ul li a:hover {
+                background: #4a4a4a;
+            }
+
+
+@media only screen and (max-width: 767px){
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+    }
+    .navigation {
+
+        width: 100%;
+        margin-top: 1rem;
+    }
+        .navigation ul{
+            display:none;
+        }
+
+        .navigation ul.show{
+            display:block;
+        }
+    
+        .navigation ul li{
+         display: inline-block;
+        }
+            .navigation ul li a{
+                display: block;
+                padding: 0.5rem 1rem;
+                transition: all 0.2s linear;
+                border-radius: 5px;
+            }
+                .navigation ul li a:hover {
+                    background: #4a4a4a;
+                }
+ }
+
+ .footer{
+    background: #333333;
+    color: white;
+    
+    height: 220px;
+    text-align: center;
+    margin-top: 2rem;
+} 
+
+.footer h2{
+    margin-top: 5%;
+
+}
+
+.sobre-nosotros{
+    margin-top: -0.5%;
+    float: left;
+    padding-top: 0.1%;
+    width: 30%;
+}
+
+.menu-rapido{
+
+    padding-top: 0.1%;
+    text-align: center;
+    margin-left: 50rem;
+    width: 20%;
+}
+
+.menu-rapido ul li{
+   text-align: center;
+   list-style: none;
+}
+
+.menu-rapido ul li a{
+   text-decoration: none;
+   text-align: center;
+   color: white;
+   
+}
+
+.redes-sociales{
+    margin-top: -10.7rem;
+    margin-left: 100rem;
+    padding: 0 2em;
+    width: 300px;
+
+}
+.redes-sociales ul{
+    text-align: center;
+    list-style: none;
+}
+.redes-sociales ul li a{
+    text-decoration: none;
+    color: white;
+}

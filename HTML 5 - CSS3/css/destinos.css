@@ -1,107 +1,18 @@
+
 .fondoMenu{
-    
     width: 100%;
     height: auto;
     border-radius: 1px ;
     border-color: black;
 }
 
-body{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #333;
-    font-size: 1.2rem;
-    line-height: 1.3em;
-    margin: 0;
-    width: 100%;
-    height: 100%;
- }
-
-.container{
-    width: 85%;
-    margin: 0 auto;
-}
-
-h1{
-    font-size: 2rem;
-    padding-top: 1rem;
-    line-height: 1rem;
-    text-align: center;
-}
-
-.h1-2{
-    color: #ffffff;
-}
-
-p{
-    margin-bottom: 1.6em;
-}
-
-.header{
-    background: rgb(15, 207, 233);
-    color:white;
-    padding: 2rem 0;
-
-    position: fixed;
-    left: 0;
-    top:0;
-    right:0;
-}
-
-    .header a{
-        color: white;
-        font-size: 18px;
-        text-decoration: none;
-    }   
-
-.logo-nav-container{
-    display:flex; /* se acomodarse a diferentes tamaños de pantalla y diferentes dispositivos*/
-    justify-content: space-around; /* distribuye el primer elemento en la primera linea y el ultimo en la ultima linea, los elementos del medios se separan a la misma distancia*/
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.logo{
-    letter-spacing: 15px;
-    font-size: 1.2rem;
-}
-.menu-icon{
-    display: none;
-}
-
-.boton-home{
-    background: #3498db;
-}
-.navigation ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-    .navigation ul li{
-     display: inline-block;
-    }
-        .navigation ul li a{
-            display: block;
-            padding: 0.5rem 1rem;
-            transition: all 0.2s linear;
-            border-radius: 5px;
-        }
-            .navigation ul li a:hover {
-                background: #4a4a4a;
-            }
-
-            
-.main{
-padding-top:10rem;
-}
-
 .seccionOfertas {
     
+    margin-top: 2%;
     margin-left: 5%;
     margin-right: 5%;
-    margin-bottom: auto;
     background-color: #F5F0EE;
-    height: 112em;
+    height: 135em;
 
 }
 
@@ -151,11 +62,9 @@ padding-top:10rem;
 
 .imagen{
     width: 95%;
-    height: 150px;
+    height: 12em;
     margin-left: 2.5%;
     margin-right: 2.5%;
-    margin-top: 3%;
-    
 }
 
 .btnOferta{
@@ -172,59 +81,4 @@ padding-top:10rem;
     
 }
 
-.footer{
-    background: #333333;
-    color: white;
-    
-    height: 220px;
-    text-align: center;
-    margin-top: 2rem;
-} 
 
-.footer h2{
-    margin-top: 5%;
-
-}
-
-.sobre-nosotros{
-    margin-top: -0.5%;
-    float: left;
-    padding-top: 0.1%;
-    width: 30%;
-}
-
-.menu-rapido{
-
-    padding-top: 0.1%;
-    text-align: center;
-    margin-left: 50rem;
-    width: 20%;
-}
-
-.menu-rapido ul li{
-   text-align: center;
-   list-style: none;
-}
-
-.menu-rapido ul li a{
-   text-decoration: none;
-   text-align: center;
-   color: white;
-   
-}
-
-.redes-sociales{
-    margin-top: -10.7rem;
-    margin-left: 100rem;
-    padding: 0 2em;
-    width: 300px;
-
-}
-.redes-sociales ul{
-    text-align: center;
-    list-style: none;
-}
-.redes-sociales ul li a{
-    text-decoration: none;
-    color: white;
-}
