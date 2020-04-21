@@ -56,7 +56,7 @@ body{
             transition: all 0.2s linear;
             text-decoration: none;
             color: #333;
-            margin-left: 10px;
+            padding-left: 14%;
         }
         .tours-iconos li img:hover {            
             transform: scale(1.2,1.2);
