@@ -38,49 +38,61 @@
                 <div class="itinerario">
                     
                     <label class="datosreserva"> Origen</label>
-                    <input type="text" id="idOrigen" class="form-control" placeholder="Ciudad o aeropuerto de origen">
+                    <select id="idOrigen" class="custom-select">
+                        <option value="0">Madrid</option>
+                        <option value="1">Barcelona</option>
+                        <option value="2">Sevilla</option>
+                        <option value="3">Valencia</option>
+                        <option value="4">Cadiz</option>
+                        <option value="5">Bilbao</option>
+                    </select>  
+
                     <label class="datosreserva"> Fecha de salida</label>
-                    <input type="date" class="select-date" >
+                    <input id="idFecha_ini" type="date" class="select-date" >
                     <label class="datosreserva"> Fecha de regreso</label>
-                    <input type="date" class="select-date" >
+                    <input id="idFecha_fin" type="date" class="select-date" >
                     <label class="datosreserva"> Adultos</label>
-                    <input type="number" class="select-number" value="0">
+                    <input id="idAdulto" type="number" class="select-number" value="0">
                     <label class="datosreserva"> Niños</label>
-                    <input type="number" class="select-number" value="0">
+                    <input id="idNino" type="number" class="select-number" value="0">
                     <label class="datosreserva"> Clase</label>
                     
                     <select id="idClase" class="custom-select">
-                        <option value="1">Clase turista</option>
-                        <option value="2">Turista premium</option>
-                        <option value="3">Business</option>
-                        <option value="4">Primera</option>
+                        <option value="0">Clase turista</option>
+                        <option value="1">Turista premium</option>
+                        <option value="2">Business</option>
+                        <option value="3">Primera</option>
                     </select>   
                     <button type="button" id="btbuscar" class="boton_reserva"> Buscar</button>
                 </div>
 
                 <div class="vuelos">
                     <h3> Visita Atenas con Ryanair</h3>
-                    <div id="resultado"></div>
-                    <div id="botones">
+                    <div id="resultado1"></div>
+                    <div id="boton1">
                         <button type="button" class="boton_vuelos"> Reservar</button>
                     </div>
                 </div>
 
                 <div class="vuelos">
                     <h3> Visita Atenas con Iberia</h3>
-                    <p> Salidas desde Madrid o Barcelona el 29/05/2020 hasta el 2/06/2020</p>
-                    <button type="button" class="boton_vuelos"> Reservar</button>
+                    <div id="resultado2"></div>
+                    <div id="boton2">
+                        <button type="button" class="boton_vuelos"> Reservar</button>
+                    </div>
                 </div>
 
                 <div class="vuelos">
                     <h3> Visita las Islas Griegas con MSC cruceros</h3>
-                    <p> 7 días, salida desde Barcelona, 22/08/2020</p>
-                    <button type="button" class="boton_vuelos"> Reservar</button>
+                    <div id="resultado3"></div>
+                    <div id="boton3">
+                        <button type="button" class="boton_vuelos"> Reservar</button>
+                    </div>
                 </div>
 
                 <div class="paquetes">
-                    <h3> Paquete vuelo + hotel por 550€</h3>
-                    <p>Incluye vuelo con Ryanair más la estancia en Hotel Evripides. Salida desde Madrid el día 23/05/2020 a las 9:00 y vuelta el día 27/05/2020 a las 17:00.</p>
+                    <h3> Paquete vuelo + hotel por 450€</h3>
+                    <p>Incluye vuelo con Ryanair más la estancia en Hotel Evripides. Salida desde Madrid el día 23/05/2020 a las 9:00 y vuelta el día 27/05/2020 a las 17:00. Precio individual por persona</p>
                     <button type="button" class="boton_paquetes"> Reservar</button>
                 </div>
 

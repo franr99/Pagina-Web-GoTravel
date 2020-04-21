@@ -20,7 +20,8 @@
     font-size: 40px;
     float: right;
     margin-top: 1%;
-    padding-right: 4.5em;
+    margin-left: 8% !important;
+    margin-right: 14%;
 
 }
 
@@ -161,7 +162,7 @@
 }
 
 h3{
-    font-size: px;
+    font-size: 24px !important;
     color: #1B9EDF;
     margin-left: 0.5em;
     margin-top: 0.5em;
@@ -173,7 +174,15 @@ p{
     margin-top: -0.5em;
 }
 
-#botones{
+#boton1{
+    display: none;
+}
+
+#boton2{
+    display: none;
+}
+
+#boton3{
     display: none;
 }
 
@@ -191,7 +200,7 @@ p{
 }
 
 .boton_paquetes{
-    margin-top: -1em;
+    margin-top: 1em;
     margin-right: 1em;
     height: 2em;
     width: 6em;
@@ -201,10 +210,16 @@ p{
     border-radius: 5px;
 }
 
-#resultado{
+#resultado1{
     width: 70% !important;
-    
-    
+}
+
+#resultado2{
+    width: 70% !important;
+}
+
+#resultado3{
+    width: 70% !important;
 }
 
 .paquetes{
