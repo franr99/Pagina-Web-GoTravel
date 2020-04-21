@@ -1,15 +1,17 @@
 .info-destino{
     margin-left: 20%;
     margin-right: 20%;
-    height: 50em;
+    height: 55em;
     width: 60%;
     background-color: #F5F0EE;
     
 }
 
 .imagen{
-    width: 55%;
-    height: 25em;
+    margin-left: 1em;
+    margin-top: 1em;
+    width: 60%;
+    height: 30em;
     border-radius: 10px;
 }
 
@@ -23,10 +25,10 @@
 }
 
 .itinerario{
-    margin-left: 3%;
-    margin-right: 3%;
+    margin-left: 2%;
+    margin-right: 2%;
     margin-top: -37.5%;
-    height: 23em;
+    height: 27em;
     width: 35%;
     float: right;
     background-color: #fff;
@@ -36,9 +38,9 @@
 }
 
 .itinerario label{
-    font-size: 18px;
+    font-size: 14px;
     display: grid;
-    margin-left: 1em;
+    margin-left: 1.5em;
     margin-bottom: 0.5em;
     margin-top: 0.5em;
 }
@@ -62,10 +64,10 @@
 .form-control{
     margin-top: 0 !important;
     margin-left: 1.5em !important;
-    width: 25em;
+    width: 65% !important;
     height: 2em;
     border-radius: 2px !important;
-    color: #fff !important;
+    color: #333 !important;
     background: transparent !important;
     box-shadow: none !important;
     border-radius: 5px !important;
@@ -92,6 +94,7 @@
 }
 
 .custom-select{
+    width: 50% !important;
     margin-left: 1.5em;
     color: #333 !important;
     font-size: 14px !important;
@@ -106,6 +109,7 @@
 }
 
 .select-number{
+    width: 15% !important;
     margin-left: 1.5em;
     border-radius: 2px !important;
     color: #333 !important;
@@ -119,6 +123,7 @@
     height: 8em;
     margin-left: 3%;
     margin-right: 8%;
+    margin-top: -7%;
     float: right;
 }
 
@@ -144,7 +149,7 @@
 .vuelos{
     background-color: #fff;
     margin-left: 3%;
-    margin-top: 1em;
+    margin-top: 1.5em;
     width: 55%;
     height: 10%;
     border: 2px solid #fff;
@@ -168,20 +173,25 @@ p{
     margin-top: -0.5em;
 }
 
+#botones{
+    display: none;
+}
+
 .boton_vuelos{
-    margin-top: -3em;
-    margin-right: 1em;
-    height: 2em;
-    width: 6em;
-    float: right;
-    background-color: rgb(15, 207, 233);
-    border: 1px solid #1B9EDF;
-    border-radius: 5px;
+    
+    margin-top: -4em !important;
+    margin-right: 1em !important;
+    height: 2em !important;
+    width: 6em !important;
+    float: right !important;
+    background-color: rgb(15, 207, 233) !important;
+    border: 1px solid #1B9EDF !important;
+    border-radius: 5px !important;
     
 }
 
 .boton_paquetes{
-    margin-top: 0;
+    margin-top: -1em;
     margin-right: 1em;
     height: 2em;
     width: 6em;
@@ -191,13 +201,19 @@ p{
     border-radius: 5px;
 }
 
+#resultado{
+    width: 70% !important;
+    
+    
+}
+
 .paquetes{
-    width: 22em;
-    height: 10em;
+    width: 25em;
+    height: 12em;
     background-color: white;
     float: right;
-    margin-right: 2em;
-    margin-top: -10em !important;
+    margin-right: 1.5em !important;
+    margin-top: -19.5em !important;
     border: 2px solid #fff;
 }
 

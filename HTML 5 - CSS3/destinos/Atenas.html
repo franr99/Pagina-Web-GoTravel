@@ -6,8 +6,11 @@
         <meta charset="UTF-8">
         <meta name = "viewport" content="width=device-width, initial-scale=1.0">
         <title> Destinos </title>
-        <link rel=stylesheet type="text/css" href="../css/destinos.css">
+        <link rel=stylesheet type="text/css" href="../css/navegador.css">
         <link rel=stylesheet type="text/css" href="../css/destino.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="../js/MostrarDatos.js" language="javascript" type="text/javascript"></script>
+
     </head>
     <body>
         <main class="main">
@@ -35,7 +38,7 @@
                 <div class="itinerario">
                     
                     <label class="datosreserva"> Origen</label>
-                    <input type="text" class="form-control" placeholder="Ciudad o aeropuerto de origen">
+                    <input type="text" id="idOrigen" class="form-control" placeholder="Ciudad o aeropuerto de origen">
                     <label class="datosreserva"> Fecha de salida</label>
                     <input type="date" class="select-date" >
                     <label class="datosreserva"> Fecha de regreso</label>
@@ -46,38 +49,31 @@
                     <input type="number" class="select-number" value="0">
                     <label class="datosreserva"> Clase</label>
                     
-                    <select class="custom-select">
+                    <select id="idClase" class="custom-select">
                         <option value="1">Clase turista</option>
                         <option value="2">Turista premium</option>
                         <option value="3">Business</option>
                         <option value="4">Primera</option>
                     </select>   
-                    <button type="button" class="boton_reserva"> Buscar</button>
-                </div>
-                <div class="compañias">
-                    <h4> Compañias</h4>
-                    <ul>
-                        <li><a href="https://www.ryanair.com/es/es"><img src="../img/ryanair.png" ></a></li>
-                        <li><a href="https://www.iberia.com/es/"><img src="../img/iberia.png" ></a></li>
-                        <li><a href="https://www.msccruceros.es/es-es/Homepage.aspx"><img src="../img/msc_cruceros.jpg"></a></li>
-
-                    </ul>
-
-                </div>
-                <div class="vuelos">
-                    <h3> Visita Atenas con Ryanair desde 75€</h3>
-                    <p> Salidas desde Madrid, Barcelona, Valencia o Sevilla el 23/05/2020 hasta el 27/05/2020</p>
-                    <button type="button" class="boton_vuelos"> Reservar</button>
+                    <button type="button" id="btbuscar" class="boton_reserva"> Buscar</button>
                 </div>
 
                 <div class="vuelos">
-                    <h3> Visita Atenas con Iberia desde 105€</h3>
+                    <h3> Visita Atenas con Ryanair</h3>
+                    <div id="resultado"></div>
+                    <div id="botones">
+                        <button type="button" class="boton_vuelos"> Reservar</button>
+                    </div>
+                </div>
+
+                <div class="vuelos">
+                    <h3> Visita Atenas con Iberia</h3>
                     <p> Salidas desde Madrid o Barcelona el 29/05/2020 hasta el 2/06/2020</p>
                     <button type="button" class="boton_vuelos"> Reservar</button>
                 </div>
 
                 <div class="vuelos">
-                    <h3> Visita las Islas Griegas con MSC cruceros desde 550€</h3>
+                    <h3> Visita las Islas Griegas con MSC cruceros</h3>
                     <p> 7 días, salida desde Barcelona, 22/08/2020</p>
                     <button type="button" class="boton_vuelos"> Reservar</button>
                 </div>
@@ -87,7 +83,16 @@
                     <p>Incluye vuelo con Ryanair más la estancia en Hotel Evripides. Salida desde Madrid el día 23/05/2020 a las 9:00 y vuelta el día 27/05/2020 a las 17:00.</p>
                     <button type="button" class="boton_paquetes"> Reservar</button>
                 </div>
-        </div>
+
+                <div class="compañias">
+                    <h4> Compañias</h4>
+                    <ul>
+                        <li><a href="https://www.ryanair.com/es/es"><img src="../img/ryanair.png" ></a></li>
+                        <li><a href="https://www.iberia.com/es/"><img src="../img/iberia.png" ></a></li>
+                        <li><a href="https://www.msccruceros.es/es-es/Homepage.aspx"><img src="../img/msc_cruceros.jpg"></a></li>
+
+                    </ul>
+            </div>
         </section>
 
     </main>
