@@ -1,7 +1,7 @@
 .info-destino{
     margin-left: 20%;
     margin-right: 20%;
-    height: 65em;
+    height: 60em;
     width: 60%;
     background-color: #F5F0EE;
     
@@ -122,9 +122,9 @@
 .compañias{
     width: 15em;
     height: 8em;
-    margin-left: 3%;
-    margin-right: 8%;
-    margin-top: -7%;
+    margin-left: 0 !important;
+    margin-right: 7em !important;
+    margin-top: -22% !important;
     float: right;
 }
 
@@ -149,10 +149,11 @@
 
 .vuelos{
     background-color: #fff;
-    margin-left: 3%;
+    margin-left: 2%;
     margin-top: 1.5em;
-    width: 55%;
-    height: 10%;
+    float: left;
+    width: 90%;
+    height: 28%;
     border: 2px solid #fff;
 
 }
@@ -211,15 +212,22 @@ p{
 }
 
 #resultado1{
-    width: 70% !important;
+    width: 80% !important;
 }
 
 #resultado2{
-    width: 70% !important;
+    width: 80% !important;
 }
 
 #resultado3{
-    width: 70% !important;
+    width: 80% !important;
+}
+
+.seccionVuelos{
+    margin-left: 1.5%;
+    margin-top: 1%;
+    width: 60% !important;
+    height: 30%;
 }
 
 .seccionVuelos h2{
@@ -228,11 +236,18 @@ p{
 }
 
 .seccionVuelos img{
-    width: 3%;
-    height: 3%;
+    width: 5%;
+    height: 10%;
     float: left;
-    margin-left: 11%;
-    margin-top: -3.5%;
+    margin-left: 17%;
+    margin-top: -5%;
+}
+
+.seccionCruceros{
+    margin-left: 1.5%;
+    margin-top: -2em !important;
+    width: 60% !important;
+    height: 30% !important;
 }
 
 .seccionCruceros h2{
@@ -241,11 +256,32 @@ p{
 }
 
 .seccionCruceros img{
-    width: 5%;
-    height: 5%;
+    width: 8%;
+    height: 11%;
     float: left;
-    margin-left: 14%;
-    margin-top: -3.5%;
+    margin-left: 20% !important;
+    margin-top: -5.7% !important;
+}
+
+.seccionPaquetes{
+    float: right;
+    width: 35%;
+    height: 30%;
+    margin-right: 2%;
+    margin-top: -26%;
+}
+
+.seccionPaquetes h2{
+    margin-left: 1.5%;
+    margin-top: 1%;
+}
+
+.seccionPaquetes img{
+    width: 10%;
+    height: 10%;
+    float: left;
+    margin-left: 34%;
+    margin-top: -10.5%;
 }
 
 .paquetes{
@@ -253,8 +289,8 @@ p{
     height: 12em;
     background-color: white;
     float: right;
-    margin-right: 1.5em !important;
-    margin-top: -19.5em !important;
+    margin-right: 0 !important;
+    margin-top: 2% !important;
     border: 2px solid #fff;
 }
 
