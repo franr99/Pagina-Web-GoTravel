@@ -222,6 +222,19 @@ p{
     width: 70% !important;
 }
 
+.seccionVuelos h2{
+    margin-left: 1.5%;
+    margin-top: 1%;
+}
+
+.seccionVuelos img{
+    width: 3%;
+    height: 3%;
+    float: left;
+    margin-left: 11%;
+    margin-top: -3.5%;
+}
+
 .paquetes{
     width: 25em;
     height: 12em;
