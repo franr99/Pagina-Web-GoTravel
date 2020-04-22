@@ -44,8 +44,8 @@ body{
         background: -moz-linear-gradient(top, #3498db, #51C0FC); /*gradiente que empieza arriba entre 2 colores*/
         background: -webkit-linear-gradient(top, #3498db 1%, #51C0FC);
         margin: 0.3em;
-        max-width: 145px;
-        max-height: 120px;
+        max-width: 85px;
+        max-height: 85px;
     }
         .tours-iconos li img{
             width: 125px;
@@ -58,10 +58,12 @@ body{
             color: #333;
             padding-left: 14%;
         }
-        .tours-iconos li img:hover {            
+        .tours-iconos li:hover {            
             transform: scale(1.2,1.2);
 
         }
+
+
 
 .excursion{
     margin-bottom: 5%;
