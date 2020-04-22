@@ -10,6 +10,7 @@ function comenzar(){
 
 function lecturaDatos(){
 
+    var idDestino = document.getElementById("idDestino").value
     var origen = document.getElementById("idOrigen").value;
     var clase = document.getElementById("idClase").value;
     var fecha_ini = document.getElementById("idFecha_ini").value;
@@ -22,6 +23,7 @@ function lecturaDatos(){
     var idOrigen = tipoOrigen[origen];
     var idClase = tipoClase[clase];
 
+    sessionStorage.setItem("destino",idDestino)
     sessionStorage.setItem("origen", idOrigen);
     sessionStorage.setItem("clase", idClase);
     sessionStorage.setItem("fecha_ini", fecha_ini);
@@ -40,6 +42,7 @@ function lecturaDatos(){
 
 function almacenarSesion(){
 
+    var destino = sessionStorage.getItem("destino");
     var origen = sessionStorage.getItem("origen");
     var clase = sessionStorage.getItem("clase");
     var fecha_ini = sessionStorage.getItem("fecha_ini");
@@ -50,7 +53,7 @@ function almacenarSesion(){
     var resultado1 = document.getElementById("resultado1");
     var resultado2 = document.getElementById("resultado2");
     var resultado3 = document.getElementById("resultado3");
- 
+
     resultado1.innerHTML = "<p> Salida desde " + origen + " en fecha " + fecha_ini + " hasta el " + fecha_fin + " para " + adulto + " adultos y " + nino + " niños en clase " + clase + ".</p>";
     document.getElementById("boton1").style.display = 'block';
 

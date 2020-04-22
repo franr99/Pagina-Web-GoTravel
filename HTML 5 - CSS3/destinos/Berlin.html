@@ -35,27 +35,77 @@
                 <img src="../img/berlin_des.jpg" class="imagen">
                 <h1> Berlin</h1>
                 <div class="itinerario">
-                    
+                    <input type="hidden" id="idDestino" value="Berlin">
+
                     <label class="datosreserva"> Origen</label>
-                    <input type="text" class="form-control" placeholder="Ciudad o aeropuerto de origen">
+                    <select id="idOrigen" class="custom-select">
+                        <option value="0">Madrid</option>
+                        <option value="1">Barcelona</option>
+                        <option value="2">Sevilla</option>
+                        <option value="3">Valencia</option>
+                        <option value="4">Cadiz</option>
+                        <option value="5">Bilbao</option>
+                    </select>  
+                    
                     <label class="datosreserva"> Fecha de salida</label>
-                    <input type="date" class="select-date" >
+                    <input id="idFecha_ini" type="date" class="select-date" >
                     <label class="datosreserva"> Fecha de regreso</label>
-                    <input type="date" class="select-date" >
+                    <input id="idFecha_fin" type="date" class="select-date" >
                     <label class="datosreserva"> Adultos</label>
-                    <input type="number" class="select-number" value="0">
+                    <input id="idAdulto" type="number" class="select-number" value="0">
                     <label class="datosreserva"> Niños</label>
-                    <input type="number" class="select-number" value="0">
+                    <input id="idNino" type="number" class="select-number" value="0">
                     <label class="datosreserva"> Clase</label>
                     
-                    <select class="custom-select">
-                        <option value="1">Clase turista</option>
-                        <option value="2">Turista premium</option>
-                        <option value="3">Business</option>
-                        <option value="4">Primera</option>
+                    <select id="idClase" class="custom-select">
+                        <option value="0">Clase turista</option>
+                        <option value="1">Turista premium</option>
+                        <option value="2">Business</option>
+                        <option value="3">Primera</option>
                     </select>   
-                    <button type="button" class="boton_reserva"> Buscar</button>
+                    <button type="button" id="btbuscar" class="boton_reserva"> Buscar</button>
                 </div>
+                
+                <section class="seccionVuelos">
+                    <h2> Vuelos</h2>
+                    <img src="../img/icon-avion.png">
+
+                    <div class="vuelos">
+                        <h3> Visita Berlin con Ryanair</h3>
+                        <div id="resultado1"></div>
+                            <div id="boton1">
+                                <button type="button" class="boton_vuelos"> Reservar</button>
+                            </div>
+                    </div>
+                    
+                    <div class="vuelos">
+                        <h3> Visita Berlin con Iberia</h3>
+                        <div id="resultado2"></div>
+                            <div id="boton2">
+                                <button type="button" class="boton_vuelos"> Reservar</button>
+                            </div>
+                    </div>
+
+                    <div class="vuelos">
+                        <h3> Visita Berlin con Air Europa</h3>
+                        <div id="resultado3"></div>
+                            <div id="boton3">
+                                <button type="button" class="boton_vuelos"> Reservar</button>
+                            </div>
+                    </div>
+
+                </section>
+
+                <section class="seccionPaquetes">
+                    <h2> Paquetes</h2>
+                    <img src="../img/icon-paquete.png">
+                    <div class="paquetes">
+                        <h3> Paquete vuelo + hotel por 450€</h3>
+                        <p>Incluye vuelo con Ryanair más la estancia en MEININGER Hotel Berlin. Salida desde Madrid el día 23/05/2020 a las 9:00 y vuelta el día 27/05/2020 a las 17:00.</p>
+                        <button type="button" class="boton_paquetes"> Reservar</button>
+                    </div>
+                </section>
+
                 <div class="compañias">
                     <h4> Compañias aéreas</h4>
                     <ul>
@@ -65,30 +115,7 @@
 
                     </ul>
                 </div>
-                <div class="vuelos">
-                    <h3> Visita Berlin con Ryanair desde 55€</h3>
-                    <p> Salidas desde Madrid, Barcelona, Valencia o Sevilla el 23/05/2020 hasta el 27/05/2020</p>
-                    <button type="button" class="boton_vuelos"> Reservar</button>
-                </div>
-
-                <div class="vuelos">
-                    <h3> Visita Berlin con Iberia desde 95€</h3>
-                    <p> Salidas desde Madrid o Barcelona el 29/05/2020 hasta el 2/06/2020</p>
-                    <button type="button" class="boton_vuelos"> Reservar</button>
-                </div>
-
-                <div class="vuelos">
-                    <h3> Visita Berlin con Air Europa desde 75€</h3>
-                    <p> Salidas desde Madrid, Valencia o Sevilla el 05/06/2020 hasta el 09/06/2020</p>
-                    <button type="button" class="boton_vuelos"> Reservar</button>
-                </div>
-
-                <div class="paquetes">
-                    <h3> Paquete vuelo + hotel por 450€</h3>
-                    <p>Incluye vuelo con Ryanair más la estancia en MEININGER Hotel Berlin. Salida desde Madrid el día 23/05/2020 a las 9:00 y vuelta el día 27/05/2020 a las 17:00.</p>
-                    <button type="button" class="boton_paquetes"> Reservar</button>
-                </div>
-        </div>
+            </div>
         </section>
 
     </main>

@@ -36,7 +36,8 @@
                 <img src="../img/atenas_des.jpg" class="imagen">
                 <h1> Atenas</h1>
                 <div class="itinerario">
-                    
+                    <input type="hidden" id="idDestino" value="Atenas">
+
                     <label class="datosreserva"> Origen</label>
                     <select id="idOrigen" class="custom-select">
                         <option value="0">Madrid</option>
@@ -46,7 +47,7 @@
                         <option value="4">Cadiz</option>
                         <option value="5">Bilbao</option>
                     </select>  
-
+                    
                     <label class="datosreserva"> Fecha de salida</label>
                     <input id="idFecha_ini" type="date" class="select-date" >
                     <label class="datosreserva"> Fecha de regreso</label>
@@ -62,19 +63,21 @@
                         <option value="1">Turista premium</option>
                         <option value="2">Business</option>
                         <option value="3">Primera</option>
-                    </select>   
+                    </select> 
+
                     <button type="button" id="btbuscar" class="boton_reserva"> Buscar</button>
                 </div>
+
                 <section class="seccionVuelos">
                     <h2> Vuelos</h2>
                     <img src="../img/icon-avion.png">
                 
                     <div class="vuelos">
                         <h3> Visita Atenas con Ryanair</h3>
-                            <div id="resultado1"></div>
-                                <div id="boton1">
-                                    <button type="button" class="boton_vuelos"> Reservar</button>
-                                </div>
+                        <div id="resultado1"></div>
+                            <div id="boton1">
+                                <button type="button" class="boton_vuelos"> Reservar</button>
+                            </div>
                     </div>
 
                     <div class="vuelos">
@@ -96,6 +99,16 @@
                     </div>
                 </section>
 
+                <div class="compañias">
+                    <h4> Compañias</h4>
+                    <ul>
+                        <li><a href="https://www.ryanair.com/es/es"><img src="../img/ryanair.png" ></a></li>
+                        <li><a href="https://www.iberia.com/es/"><img src="../img/iberia.png" ></a></li>
+                        <li><a href="https://www.msccruceros.es/es-es/Homepage.aspx"><img src="../img/msc_cruceros.jpg"></a></li>
+
+                    </ul>
+                </div>
+
                 <section class="seccionCruceros">
                     <h2> Cruceros</h2>
                     <img src="../img/icon-crucero.png">
@@ -108,14 +121,7 @@
                     </div>
                 </section>
 
-                <div class="compañias">
-                    <h4> Compañias</h4>
-                    <ul>
-                        <li><a href="https://www.ryanair.com/es/es"><img src="../img/ryanair.png" ></a></li>
-                        <li><a href="https://www.iberia.com/es/"><img src="../img/iberia.png" ></a></li>
-                        <li><a href="https://www.msccruceros.es/es-es/Homepage.aspx"><img src="../img/msc_cruceros.jpg"></a></li>
-
-                    </ul>
+                
             </div>
         </section>
 

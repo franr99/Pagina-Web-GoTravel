@@ -33,8 +33,8 @@ h1{
 }
 
 .listaCompañias{
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 7%;
+    margin-right: 7%;
     margin-top: 1%;
 }
 
@@ -47,8 +47,8 @@ h1{
 }
 
 .compañia_img{
-    width: 150px;
-    height: 150px;
+    width: 9em;
+    height: 9em;
     border-radius: 40px;
 }
 
