@@ -1,7 +1,7 @@
 .info-destino{
     margin-left: 20%;
     margin-right: 20%;
-    height: 55em;
+    height: 65em;
     width: 60%;
     background-color: #F5F0EE;
     
@@ -232,6 +232,19 @@ p{
     height: 3%;
     float: left;
     margin-left: 11%;
+    margin-top: -3.5%;
+}
+
+.seccionCruceros h2{
+    margin-left: 1.5%;
+    margin-top: 1%;
+}
+
+.seccionCruceros img{
+    width: 5%;
+    height: 5%;
+    float: left;
+    margin-left: 14%;
     margin-top: -3.5%;
 }
 
