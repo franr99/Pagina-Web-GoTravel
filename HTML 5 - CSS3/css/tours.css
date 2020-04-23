@@ -32,11 +32,13 @@ body{
 
 .menu-img .tours-iconos{
     
-    padding: 2rem 40%;
-    padding-left: 66.5em;
+    margin-left: 48em;
+    margin-right: 45em;
     list-style: none;
     text-decoration: none;
     color: #333;
+    
+
 }
 
     .menu-img .tours-iconos li{
@@ -44,19 +46,23 @@ body{
         background: -moz-linear-gradient(top, #3498db, #51C0FC); /*gradiente que empieza arriba entre 2 colores*/
         background: -webkit-linear-gradient(top, #3498db 1%, #51C0FC);
         margin: 0.3em;
-        max-width: 85px;
-        max-height: 85px;
+        width: 7em;
+        height: 7em;
+        
+        
     }
         .tours-iconos li img{
-            width: 125px;
-            height: 100px;
+            width: 7em;
+            height: 7em;
             text-align: center;
             display: block;
-            padding: 0.5rem 1rem;
             transition: all 0.2s linear;
             text-decoration: none;
             color: #333;
-            padding-left: 14%;
+            margin-left: 0;
+            margin-right: 2.5%;
+            
+           
         }
         .tours-iconos li:hover {            
             transform: scale(1.2,1.2);
@@ -72,9 +78,17 @@ body{
 .historia{
     margin-bottom: 5%
 }
+
+.aventura{
+    margin-bottom: 5%
+}
+
+.entretenimiento{
+    margin-bottom: 5%
+}
 .excursion .titulo-excursion{
     margin-left: 5em;
-    width: 15%;
+    width: 16%;
     height: 15%;
     background: -moz-linear-gradient(top, #3498db, #51C0FC); /*gradiente que empieza arriba entre 2 colores*/
     background: -webkit-linear-gradient(top, #3498db 1%, #51C0FC);
@@ -88,7 +102,7 @@ body{
     .titulo-excursion h1{
         
         padding-right: 20%;
-        padding-top: 2.2%;
+        padding-top: 5%;
         font-size: 1.2vw;
         font-family: 'lobster', cursive;
         color: white;
@@ -123,6 +137,57 @@ body{
 
         }
 
+.entretenimiento .titulo-entretenimiento{
+            margin-left: 5em;
+            width: 16%;
+            height: 15%;
+            background: -moz-linear-gradient(top, #3498db, #51C0FC); /*gradiente que empieza arriba entre 2 colores*/
+            background: -webkit-linear-gradient(top, #3498db 1%, #51C0FC);
+        
+        }
+         .titulo-entretenimiento img{
+            width: 75px;
+             height: 62px;
+        
+        }
+        .titulo-entretenimiento h1{
+                
+            padding-right: 13%;
+            padding-top: 5%;
+            font-size: 1.2vw;
+            font-family: 'lobster', cursive;
+            color: white;
+            float: right;
+        }
+        
+        .contenedor{
+        
+             background-color: #F5F0EE;
+        
+        }
+        
+        
+        .contenedor .contenido li{
+            display: inline-block;
+            text-decoration: none;
+            list-style: none;
+            width: 220px;
+            height: 170px;
+        }
+        .contenido li img{
+            width: 220px;
+            height: 170px;
+            padding: 0.5rem 1rem;
+            transition: all 0.2s linear;
+            text-decoration: none;
+            list-style: none;
+                   
+        }
+        .contenido li img:hover {            
+             transform: scale(1.2,1.2);
+        
+        }
+
 .historia .titulo-historia{
             margin-left: 5em;
             width: 17%;
@@ -138,8 +203,8 @@ body{
             }
             .titulo-historia h1{
                 
-                padding-right: 16%;
-                padding-top: 2.2%;
+                padding-right: 14%;
+                padding-top: 5%;
                 font-size: 1.2vw;
                 font-family: 'lobster', cursive;
                 color: white;
@@ -149,7 +214,7 @@ body{
 .aventura .titulo-aventura{
 
     margin-left: 5em;
-    width: 18%;
+    width: 18.5%;
     height: 15%;
     background: -moz-linear-gradient(top, #3498db, #51C0FC); /*gradiente que empieza arriba entre 2 colores*/
     background: -webkit-linear-gradient(top, #3498db 1%, #51C0FC);
@@ -161,7 +226,7 @@ body{
     }
     .titulo-aventura h1{
         padding-right: 9%;
-        padding-top: 2.2%;
+        padding-top: 5%;
         font-size: 1.2vw;
         font-family: 'lobster', cursive;
         color: white;
