@@ -50,10 +50,11 @@ p{
     flex-wrap: nowrap;
 }
 
-.logo{
-    letter-spacing: 15px;
-    font-size: 1.2em;
+.logo img{
+    width: 80%;
+    height: 80%;
 }
+
 .menu-icon{
     display: none;
 }
