@@ -160,8 +160,9 @@ p{
 }
 
 .redes-sociales{
+    float: right;
     margin-top: -10.7rem;
-    margin-left: 100rem;
+    margin-right: 5em;
     padding: 0 2em;
     width: 300px;
 
