@@ -12,7 +12,7 @@
     margin-left: 4%;
     margin-right: 4%;
     background-color: #F5F0EE;
-    height: 126em;
+    height: 160em;
 
 }
 
@@ -25,6 +25,7 @@
 .seccionOfertas h4{
     color: #1B9EDF;
     margin-left: 5%;
+    margin-top: 2%;
 }
 
 .seccionOfertas p{
@@ -45,7 +46,7 @@
     margin-top: 0.5%;
     background-color: #FFFBF3;
     width: 18%;
-    height: 28rem;
+    height: 36rem;
     border: 3px solid #F4F7F9;
     border-radius: 5%;
     /*box-shadow: black 1px 1px 1px;*/
@@ -80,6 +81,54 @@
     margin-left: 40% !important;
     margin-bottom: 3rem !important;
     
+}
+
+.select-date{
+    width: 44% !important;
+    margin-left: 0 !important;
+    margin-right: 6% !important;
+    margin-top: 0 !important;
+    float: right !important;
+    border-radius: 2px !important;
+    color: #333 !important;
+    background-color: #F5F0EE !important;
+    box-shadow: none !important;
+    border-radius: 5px !important;
+}
+
+.select-date::-webkit-inner-spin-button,
+.select-date::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.select-date::-webkit-calendar-picker-indicator{
+    background: transparent !important;
+}
+
+.custom-select{
+    width: 44% !important;
+    height: 2.4em !important;
+    margin-left: 0;
+    margin-right: 6%;
+    float: right !important;
+    color: #333 !important;
+    font-size: 14px !important;
+    border: 1px solid #333 !important;
+    box-shadow: none !important;
+    border-radius: 5px !important;
+    background-color: #F5F0EE !important;
+}
+
+.custom-select option{
+    color: #000;
+}
+
+.datosreserva{
+    color: #1B9EDF;
+    font-size: 14px;
+    margin-left: 5%;
+    margin-top: 2%;
 }
 
 
