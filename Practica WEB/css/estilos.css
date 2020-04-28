@@ -8,12 +8,9 @@ body{
     
 }
 
-.intro{
-    background-color: #333;
-}
-
 .slides{
     padding-left: 5%;
+    background-color: #333;
 }
 .destinos{
     background-color: #ffffff;
