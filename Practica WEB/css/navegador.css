@@ -68,10 +68,12 @@ p{
     list-style: none;
     text-align: center;
     float: left;
+
 }
 
     .navigation ul li{
      display: inline-block;
+
     }
         .navigation ul li a{
             
@@ -79,9 +81,12 @@ p{
             padding: 0.5rem 1rem;
             transition: all 0.2s linear;
             border-radius: 5px;
+
         }
             .navigation ul li a:hover {
                 background: #4a4a4a;
+                text-decoration: none;
+                color: #fff;
             }
 
 
@@ -174,4 +179,22 @@ p{
 .redes-sociales ul li a{
     text-decoration: none;
     color: white;
+}
+
+aside .btnPerfil{
+    width: 5.5%;
+    height: 2.2em;
+    float: right !important;
+    margin-left: 0;
+    margin-right: 3%;
+    margin-top: -3%;
+    border-radius: 5px;
+    border-color: transparent;
+    background-color: #3498db;
+    color: #fff;
+    transition: all 0.2s linear;
+}
+
+aside .btnPerfil:hover{
+    background: #4a4a4a;
 }
