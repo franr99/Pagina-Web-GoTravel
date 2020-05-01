@@ -40,31 +40,33 @@
                     <img src="img/berlin_des2.jpg" class="imagen">
                     <h2>Berlin</h2>
                     <p class="descripcion">La ciudad es conocida por su ambiente artístico y los sitios geográficos modernos, como la Filarmónica de Berlín, el Monumento del Holocausto y los restos del Muro de Berlín.</p>
-                    <form action="formulario_destino.php" method="GET">
+                    <form action="php/formulario_destino.php" method="GET">
+                        <input type="hidden" name="idDestino" value="Berlin"/>
                         <label class="datosreserva"> Origen</label>
-                        <select id="origen" class="custom-select">
+                        <select id="origen" class="custom-select" name="origen">
                             <option value="0">Madrid</option>
                             <option value="1">Barcelona</option>
                             <option value="2">Sevilla</option>
                             <option value="3">Valencia</option>
                             <option value="4">Cadiz</option>
                             <option value="5">Bilbao</option>
+                            
                         </select>
 
                         <label class="datosreserva"> Fecha de salida</label>
-                        <input id="fecha_ini" type="date" class="select-date" >
+                        <input id="fecha_ini" type="date" class="select-date" name="fecha_ini"/>
                         <label class="datosreserva"> Fecha de regreso</label>
-                        <input id="fecha_fin" type="date" class="select-date" >
+                        <input id="fecha_fin" type="date" class="select-date" name="fecha_fin"/>
 
                         <label class="datosreserva"> Compañia de vuelo</label>
-                        <select id="compañia" class="custom-select">
+                        <select id="compañia" class="custom-select" name="compania">
                             <option value="0">Ryanair</option>
                             <option value="1">Vueling</option>
                             <option value="2">Iberia</option>
                             <option value="3">Air Europa</option>
                         </select>
                         <h4>Por tan solo 55€</h4>
-                        <input type="submit" class="btnOferta" value="Reservar">
+                        <input type="submit" class="btnOferta">
                     </form>
 
                 </li>
