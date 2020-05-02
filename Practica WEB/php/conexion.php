@@ -1,0 +1,41 @@
+<?php
+
+$server = "remotemysql.com";
+$user = "TYPr5pcNsn";
+$pass = "SdH5mbwTbf";
+$database = "TYPr5pcNsn";
+
+$link = mysqli_connect ($server, $user, $pass, $database)
+	or die("Imposible conectar con $server");
+
+if ($link)
+   print ("Conexi&oacute;n Realizada con &eacute;xito"); 
+
+/*$bd = mysqli_select_db($database, $link) 
+  or die("Imposible abrir BBDD $database <br/>".mysqli_error());
+
+if ($bd)
+   print ("<br> Seleccionada BD $database correctamente"); */
+
+   //function login(){
+       $usuario = $_POST['email'];
+       $contra = $_POST['contra'];
+
+        $qryLogin = sprintf("SELECT * FROM Cliente WHERE email = '" .$usuario. "' and contrasena = '" .$contra. "'");
+        $rscLogin = mysqli_query($link, $qryLogin);
+
+        $filas = mysqli_num_rows($rscLogin);
+
+        if($filas >0){
+            echo "autenticado correctamente";
+        }
+        else{
+            echo "eres un mierda seca";
+        }
+
+        mysqli_free_result($rscLogin);
+        mysqli_close($link);
+
+   //}
+
+?>
