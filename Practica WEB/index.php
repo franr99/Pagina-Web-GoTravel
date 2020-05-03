@@ -18,6 +18,8 @@
         <?php
             session_start();
             $varsesion = $_SESSION['usuario'];
+            $varnombre = $_SESSION['nombre'];
+            
             error_reporting(0);
             
         ?>
@@ -38,7 +40,7 @@
             <aside><a href="login.php"><button type="button" class="btnPerfil"> <?php if($varsesion == null || $varsesion == '')
                                                                                             echo "Mi perfil";
                                                                                         else
-                                                                                            echo $varsesion ?> </button></a></aside>
+                                                                                            echo $varnombre ?> </button></a></aside>
         </header>
 
         <main class="main">

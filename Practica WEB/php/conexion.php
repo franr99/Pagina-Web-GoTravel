@@ -24,17 +24,22 @@ if ($bd)
         $qryLogin = sprintf("SELECT * FROM Cliente WHERE email = '" .$usuario. "' and contrasena = '" .$contra. "'");
         $rscLogin = mysqli_query($link, $qryLogin);
 
+
         $filas = mysqli_num_rows($rscLogin);
 
         $redireccionar = false;
         if($filas >0){
             $redireccionar = true;
+           
             
         }
         
         if($redireccionar){
             session_start();
             $_SESSION['usuario'] = $usuario;
+            $fila = $rscLogin->fetch_row();
+	        $nombre = $fila[1];
+ 	        $_SESSION['nombre'] = $nombre;
             Header( "Location: http://localhost/Practica%20WEB/index.php");
         }else{
             session_start();
