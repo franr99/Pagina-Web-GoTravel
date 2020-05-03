@@ -13,6 +13,7 @@
         session_start();
         error_reporting(0);
         $error = $_SESSION['login'];
+        $registro = $_SESSION['registro'];
         if($error=='1'){
         //if (isset($_GET['error']) && $_GET['error'] == 1) {
     ?>
@@ -20,7 +21,12 @@
     
     <?php
         }
+        if($registro=='1'){
+    ?>
+        <script> alert("Usuario registrado correctamente") </script>
 
+    <?php
+        }
     ?>
 
         <section class="contenedor">
@@ -31,7 +37,7 @@
                 <input type="password" name="contra" maxlength="50" class="form" placeholder="contraseña" required>
                 <input type="submit" class="btnLogin" value="Iniciar Sesión">
             </form>
-            <p class="registro">¿No tienes cuenta? <a href="php/conexion.php"> Registrarse</a></p>
+            <p class="registro">¿No tienes cuenta? <a href="registrar.php"> Registrarse</a></p>
         </section>
 
     </body>

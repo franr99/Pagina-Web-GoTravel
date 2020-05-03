@@ -11,13 +11,13 @@
         <section class="contenedor">
             <h2> Bienvenido</h2>
             <img src="img/logo-bueno.png" class="logo">
-            <form action="Formulario" method="GET">
-				<input type="name" name="nombre" maxlength="50" class="form" placeholder="nombre" required>
+            <form action="php/registro.php" method="POST">
+				<input type="name" name="nombre" maxlength="20" class="form" placeholder="nombre" required>
 				<input type="dir" name="direccion" maxlength="50" class="form" placeholder="direccion" required>
-                <input type="email" name="email" maxlength="50" class="form" placeholder="email" required>
+                <input type="email" name="email" maxlength="20" class="form" placeholder="email" required>
 				<input type="password" name="contra" maxlength="50" class="form" placeholder="contraseña" required>
 				<input type="password" name="contra" maxlength="50" class="form" placeholder="confirmar contraseña" required>
-                <input type="submit" class="btnLogin" value="Registrarse" href="index.html">
+                <input type="submit" class="btnLogin" value="Registrarse">
             </form>
         </section>
     </body>
