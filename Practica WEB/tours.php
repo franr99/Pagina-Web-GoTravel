@@ -22,11 +22,11 @@
                 <span class="menu-icon">Ver menú</span>
                 <nav class="navigation">
                     <ul>
-                        <li><a class="boton-home" href="index.html">Home</a></li>
-                        <li><a href="destinos.html">Destinos</a></li>
-                        <li><a href="hoteles.html">Hoteles</a></li>
-                        <li><a href="cruceros.html">Cruceros</a></li>
-                        <li><a href="tours.html">Tours</a></li>
+                        <li><a class="boton-home" href="index.php">Home</a></li>
+                        <li><a href="destinos.php">Destinos</a></li>
+                        <li><a href="hoteles.php">Hoteles</a></li>
+                        <li><a href="cruceros.php">Cruceros</a></li>
+                        <li><a href="tours.php">Tours</a></li>
                     </ul>
                 </nav>
             </section>
