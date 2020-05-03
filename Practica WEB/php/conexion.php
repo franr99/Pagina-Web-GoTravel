@@ -18,21 +18,30 @@ if ($bd)
    print ("<br> Seleccionada BD $database correctamente"); */
 
    //function login(){
-       $usuario = $_POST['email'];
-       $contra = $_POST['contra'];
+        $usuario = $_POST['email'];
+        $contra = $_POST['contra'];
 
         $qryLogin = sprintf("SELECT * FROM Cliente WHERE email = '" .$usuario. "' and contrasena = '" .$contra. "'");
         $rscLogin = mysqli_query($link, $qryLogin);
 
         $filas = mysqli_num_rows($rscLogin);
 
+        $redireccionar = false;
         if($filas >0){
-            echo "autenticado correctamente";
+            $redireccionar = true;
+            
         }
-        else{
-            echo "eres un mierda seca";
+        
+        if($redireccionar){
+            session_start();
+            $_SESSION['usuario'] = $usuario;
+            Header( "Location: http://localhost/Practica%20WEB/index.php");
+        }else{
+            session_start();
+            $_SESSION['login'] = '1'; 
+            Header( "Location: http://localhost/Practica%20WEB/login.php");
         }
-
+        
         mysqli_free_result($rscLogin);
         mysqli_close($link);
 
