@@ -1,0 +1,25 @@
+.foto{
+    background-color: rgb(15, 207, 233);
+    width: 20%;
+    border-radius: 100%;
+    margin-left: 5em;
+}
+
+.foto img{
+    width: 50%;
+    height: 50%;
+    margin: 6em;
+}
+
+.info{
+    background-color: antiquewhite;
+    width: 50%;
+    height: 75%;
+    float: right;
+}
+
+.reservas{
+    background-color:gainsboro;
+    width: 70%;
+    height: 75%;
+}
