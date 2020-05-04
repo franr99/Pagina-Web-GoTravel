@@ -1,27 +1,19 @@
 <?php
 
-$server = "remotemysql.com";
-$user = "TYPr5pcNsn";
-$pass = "SdH5mbwTbf";
-$database = "TYPr5pcNsn";
+   include('conexion.php');
+   $link = conectar();
 
-$link = mysqli_connect ($server, $user, $pass, $database)
-	or die("Imposible conectar con $server");
+   $nombre = $_POST['nombre'];
+   $dir = $_POST['direccion'];
+   $email = $_POST['email'];
+   $contra = $_POST['contra'];
 
-if ($link)
-   print ("Conexi&oacute;n Realizada con &eacute;xito"); 
+   $qryLogin = "INSERT INTO Cliente (nombre, direccion, email, contrasena) VALUES ('$nombre' , '$dir' , '$email' , '$contra')";
+   $rscLogin = mysqli_query($link, $qryLogin);
 
-    $nombre = $_POST['nombre'];
-    $dir = $_POST['direccion'];
-    $email = $_POST['email'];
-    $contra = $_POST['contra'];
+   session_start();
+   $_SESSION['registro'] = '1'; 
+   Header( "Location: http://localhost/Practica%20WEB/login.php");
 
-    $qryLogin = "INSERT INTO Cliente (nombre, direccion, email, contrasena) VALUES ('$nombre' , '$dir' , '$email' , '$contra')";
-    $rscLogin = mysqli_query($link, $qryLogin);
-
-    session_start();
-    $_SESSION['registro'] = '1'; 
-    Header( "Location: http://localhost/Practica%20WEB/login.php");
-
-    mysqli_close($link);
+?>
 

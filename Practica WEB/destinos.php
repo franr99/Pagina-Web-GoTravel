@@ -40,7 +40,7 @@
                     <img src="img/berlin_des2.jpg" class="imagen">
                     <h2>Berlin</h2>
                     <p class="descripcion">La ciudad es conocida por su ambiente artístico y los sitios geográficos modernos, como la Filarmónica de Berlín, el Monumento del Holocausto y los restos del Muro de Berlín.</p>
-                    <form action="php/formulario_destino.php" method="GET">
+                    <form action="php/reservaDestino.php" method="POST">
                         <input type="hidden" name="idDestino" value="Berlin"/>
                         <label class="datosreserva"> Origen</label>
                         <select id="origen" class="custom-select" name="origen">
