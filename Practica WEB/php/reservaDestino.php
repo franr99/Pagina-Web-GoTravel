@@ -23,18 +23,23 @@ $link = conectar();
     <body>
         <section class="contenedor">
             <h2> Confirmar tu reserva</h2>
-                <h4> Destino </h4>
+            <img src="../img/logo-bueno.png" class="logo">
 				<input type="name" class="form" value="<?php echo $idDestino ?>" readonly="readonly">
-                <h4> Origen </h4>
 				<input type="name" class="form" value="<?php echo $origen ?>" readonly="readonly">
-                <h4> Fecha salida </h4>
                 <input type="date" class="form" value="<?php echo $fecha_ini ?>" readonly="readonly">
-				<h4> Fecha Regreso </h4>
                 <input type="date" class="form" value="<?php echo $fecha_fin ?>" readonly="readonly">
-                <h4> Compañia </h4>
                 <input type="name" class="form" value="<?php echo $compania ?>" readonly="readonly">
-                <input type="submit" class="btnLogin" value="Reservar" onclick = "funcion();">
+                <input type="submit" class="btnLogin" value="Reservar" onclick = "reservar();">
         </section>
     </body>
+
+    <?php
+        function reservar(){
+
+
+        }
+
+
+    ?>
 
 </html>
