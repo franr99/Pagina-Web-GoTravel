@@ -1,25 +1,103 @@
 .foto{
     background-color: rgb(15, 207, 233);
-    width: 20%;
-    border-radius: 100%;
-    margin-left: 5em;
+    max-width: 200px !important;
+    max-height: 200px !important;
+    border-radius: 50%;
+    margin: 2em;
+    margin-left: 17em;
 }
 
 .foto img{
     width: 50%;
     height: 50%;
-    margin: 6em;
+    margin:2em;
+    margin-left: 3em;
+
+}
+
+.btnfoto{
+
+    background-color: black;
+    opacity: 0.6;
+    width: 55%;
+    border-radius: 50px;
+    border: none;
+    border-color: none;
+    margin:2em;
+    margin-top:-1.9em;
+    margin-left: 2.8em;
+}
+
+.btnfoto span{
+    color: white;
+    opacity: 1;
 }
 
 .info{
-    background-color: antiquewhite;
+    
     width: 50%;
     height: 75%;
     float: right;
+    margin-top: -10%;
+    margin-right: 10%;
+    
+}
+
+.info article{
+    margin: 1em;
+}
+
+.info .btnmodificar{
+
+    color: white;
+    border-radius: 5px;
+    background-color:  #3498db;
+    border: none;
+    margin-left: 1em;
+}
+
+.info .btneliminar{
+
+    color: white;
+    border-radius: 5px;
+    float:right;
+    background-color: black;
+    opacity: 0.7;
+    border: none;
+
+}
+
+.info hr{
+    border: 1px solid rgb(15, 207, 233) ;
 }
 
 .reservas{
-    background-color:gainsboro;
+
     width: 70%;
     height: 75%;
+    margin-left: 5em;
+    margin-top: 8em;
+    margin-bottom: 6em ;
 }
+
+.reservas article{
+    background-color: white;
+    height: 50%;
+    margin:2em;
+    border: 1px solid rgb(15, 207, 233);
+}
+.reservas article h2{
+    text-align: center;
+    color: silver;
+    margin-top: -1em;
+
+}
+.reservas article img{
+    width: 100%;
+    height: 50%;
+}
+
+.reservas hr{
+    border: 1px solid rgb(15, 207, 233) ;
+}
+
