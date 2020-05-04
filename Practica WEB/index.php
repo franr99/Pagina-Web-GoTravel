@@ -17,9 +17,7 @@
     <body>
         <?php
             session_start();
-            $varsesion = $_SESSION['usuario'];
             $varnombre = $_SESSION['nombre'];
-            
             error_reporting(0);
             
         ?>
@@ -37,7 +35,7 @@
                     </ul>
                 </nav>
             </section>
-            <aside><a href="login.php"><button type="button" class="btnPerfil"> <?php if($varsesion == null || $varsesion == '')
+            <aside><a href="login.php"><button type="button" class="btnPerfil"> <?php if($varnombre == null || $varnombre == '')
                                                                                             echo "Mi perfil";
                                                                                         else
                                                                                             echo $varnombre ?> </button></a></aside>

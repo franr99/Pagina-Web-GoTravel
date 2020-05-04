@@ -14,6 +14,7 @@
         error_reporting(0);
         $error = $_SESSION['login'];
         $registro = $_SESSION['registro'];
+        $varsesion = $_SESSION['usuario'];
         if($error=='1'){
         //if (isset($_GET['error']) && $_GET['error'] == 1) {
     ?>
@@ -27,7 +28,10 @@
 
     <?php
         }
-    ?>
+        if($varsesion != null || !$varsesion == ''){
+            Header( "Location: http://localhost/Practica%20WEB/perfil.php");
+        }
+      ?>
 
         <section class="contenedor">
             <h2> Bienvenido</h2>

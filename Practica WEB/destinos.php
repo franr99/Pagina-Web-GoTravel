@@ -14,8 +14,14 @@
     </head>
     <body>
     <main class="main">
+    <?php
+            error_reporting(0);
+            session_start();
+            $varnombre = $_SESSION['nombre'];
+            
+            
+        ?>
         <header class="header">
-
             <section class="container logo-nav-container">
                 <a href="#" class="logo"><img src="img/logo-bueno.png"></a>
                 <span class="menu-icon">Ver menú</span>
@@ -29,6 +35,10 @@
                     </ul>
                 </nav>
             </section>
+            <aside><a href="login.php"><button type="button" class="btnPerfil"> <?php if($varnombre == null || $varnombre == '')
+                                                                                            echo "Mi perfil";
+                                                                                        else
+                                                                                            echo $varnombre ?> </button></a></aside>
         </header>
         <img src="img/playa_des3.jpg" class="fondoMenu" alt="">
         <section class="seccionOfertas"> 
