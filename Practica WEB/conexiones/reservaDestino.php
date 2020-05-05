@@ -13,18 +13,15 @@ $link = conectar();
     $arraySalida = array("Madrid","Barcelona","Sevilla","Valencia","Cadiz","Bilbao");
     $arrayCompania = array("Ryanair","Vueling","Iberia","Air Europa");
 
-    $ciudadOrigen = $arraySalida[$origen];
-    $comViaje = $arrayCompania[$compania];
+    $ciudadOrigen = $_POST['ciudadOrigen'];
+    $comViaje = $_POST['comViaje'];
 
-    if($_GET['funcion']){
-        //reservar($link);
+    if($_POST['funcion']){
+
         $qryLogin = "INSERT INTO Reserva (compania, tipo_reserva, origen, destino, fecha_ini, fecha_fin) VALUES ('$comViaje' , ' $tipo_compania ', '$ciudadOrigen' , ' $idDestino ', '$fecha_ini' , '$fecha_fin')";
         $rscLogin = mysqli_query($link, $qryLogin);
-
         Header( "Location: http://localhost/Practica%20WEB/index.php");
-
     }
-
 ?>
 
 <!DOCTYPE html>
@@ -40,32 +37,21 @@ $link = conectar();
         <section class="contenedor">
             <h2> Confirmar tu reserva</h2>
                 <h4 class="origen"> Origen </h4>
-				<input type="name" class="form" value="<?php echo $ciudadOrigen ?>" readonly="readonly">
+                <form action="reservaDestino.php" method="POST">
+                <input type="hidden" name="funcion" value="1">
+				<input type="name" name="ciudadOrigen" class="form" value="<?php echo $arraySalida[$origen] ?>" readonly="readonly">
                 <h4> Destino </h4>
-				<input type="name" class="form" value="<?php echo $idDestino ?>" readonly="readonly">
+				<input type="name" name="idDestino" class="form" value="<?php echo $idDestino ?>" readonly="readonly">
                 <h4> Fecha salida </h4>
-                <input type="date" class="form" value="<?php echo $fecha_ini ?>" readonly="readonly">
+                <input type="date" name="fecha_ini" class="form" value="<?php echo $fecha_ini ?>" readonly="readonly">
                 <h4> Fecha regreso </h4>
-                <input type="date" class="form" value="<?php echo $fecha_fin ?>" readonly="readonly">
+                <input type="date" name="fecha_fin" class="form" value="<?php echo $fecha_fin ?>" readonly="readonly">
                 <h4> Compañia </h4>
-                <input type="name" class="form" value="<?php echo $comViaje ?>" readonly="readonly">
-                <!--<input type="submit" class="btnLogin" value="Reservar" onclick = "reservar();">-->
-                <a href="reservaDestino.php?funcion=1" class=btnLogin> Reservar </a>
+                <input type="name" name="comViaje" class="form" value="<?php echo $arrayCompania[$compania] ?>" readonly="readonly">
+                <input type="submit" class="btnLogin" value="Reservar">
+
         </section>
 
     </body>
-
-    <?php
-
-        /*function reservar(&$link){
-            $qryLogin = "INSERT INTO Reserva (compania, tipo_reserva, origen, destino, fecha_ini, fecha_fin) VALUES ('$comViaje' , ' $tipo_compania ', '$ciudadOrigen' , ' $idDestino ', '$fecha_ini' , '$fecha_fin')";
-            $rscLogin = mysqli_query($link, $qryLogin);
-
-            Header( "Location: http://localhost/Practica%20WEB/index.php");
-
-        }*/
-
-
-    ?>
 
 </html>
