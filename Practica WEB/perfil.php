@@ -36,7 +36,7 @@
                     </ul>
                 </nav>
             </section>
-            <aside><a href="login.php"><button type="button" class="btnPerfil"> <?php if($varsesion == null || $varsesion == '')
+            <aside><a href="login.php"><button type="button" class="btnPerfil">  <?php if($varsesion == null || $varsesion == '')
                                                                                             echo "Mi perfil";
                                                                                         else
                                                                                             echo $varnombre ?> </button></a></aside>
@@ -47,20 +47,32 @@
             <section class="foto">
 
                 <img src="img/icono-perfil.png">
+                <button type="button" class="btnfoto"> <span>Cambiar foto</span></button>
 
 
             </section>
 
             <section class="info">
+                <h2>Información personal</h2>
+                <hr>
+                <article><span>Nombre: pichula </span> </article>
+                <article><span>Email: pichula@gmail.com </span> </article>
+                <article><span>Direccion: Tu culo </span> </article>
+                <button type="button" class="btnmodificar"> <span>Modificar datos</span></button>
+                <button type="button" class="btneliminar"> <span>Eliminar cuenta</span></button>
 
-                <span>Nombre: </span>
-                <span>Email:  </span>
-                <span>Direccion:  </span>
+                
 
             </section>
 
             <section class="reservas">
-                <span>Reservas  </span>
+                <h2>Reservas </h2>
+                <hr>
+
+                <article>
+                    <img src="img/foto-reserva.png">
+                    <h2> No has reservado aún</h2>
+                </article>
             </section>
 
         </main>
