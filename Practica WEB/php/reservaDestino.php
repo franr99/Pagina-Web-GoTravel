@@ -9,6 +9,9 @@ $link = conectar();
     $fecha_fin = $_POST['fecha_fin'];
     $compania = $_POST['compania'];
 
+    $arraySalida = array("Madrid","Barcelona","Sevilla","Valencia","Cadiz","Bilbao");
+    $arrayCompania = array("Ryanair","Vueling","Iberia","Air Europa");
+
 ?>
 
 <!DOCTYPE html>
@@ -24,13 +27,19 @@ $link = conectar();
         <section class="contenedor">
             <h2> Confirmar tu reserva</h2>
             <img src="../img/logo-bueno.png" class="logo">
+                <h4> Origen </h4>
 				<input type="name" class="form" value="<?php echo $idDestino ?>" readonly="readonly">
-				<input type="name" class="form" value="<?php echo $origen ?>" readonly="readonly">
+                <h4> Destino </h4>
+				<input type="name" class="form" value="<?php echo $arraySalida[$origen] ?>" readonly="readonly">
+                <h4> Fecha salida </h4>
                 <input type="date" class="form" value="<?php echo $fecha_ini ?>" readonly="readonly">
+                <h4> Fecha regreso </h4>
                 <input type="date" class="form" value="<?php echo $fecha_fin ?>" readonly="readonly">
-                <input type="name" class="form" value="<?php echo $compania ?>" readonly="readonly">
+                <h4> Compañia </h4>
+                <input type="name" class="form" value="<?php echo $arrayCompania[$compania] ?>" readonly="readonly">
                 <input type="submit" class="btnLogin" value="Reservar" onclick = "reservar();">
         </section>
+
     </body>
 
     <?php
