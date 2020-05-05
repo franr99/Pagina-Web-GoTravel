@@ -11,7 +11,7 @@
         <section class="contenedor">
             <h2> Bienvenido</h2>
             <img src="img/logo-bueno.png" class="logo">
-            <form action="php/registro.php" method="POST">
+            <form action="conexiones/registro.php" method="POST">
 				<input type="name" name="nombre" maxlength="20" class="form" placeholder="nombre" required>
 				<input type="dir" name="direccion" maxlength="50" class="form" placeholder="direccion" required>
                 <input type="email" name="email" maxlength="20" class="form" placeholder="email" required>

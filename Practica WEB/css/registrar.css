@@ -37,7 +37,7 @@ h2{
     float: left;
     margin-left: 20%;
     border-radius: 10px;
-    margin-top: 3%;
+    margin-top: 1.5%;
 }
 
 .btnLogin{
@@ -58,5 +58,12 @@ h2{
 
 h4{
     margin-left: 10%;
-    margin-top: 0;
+    margin-top: 3%;
+    float: left;
+}
+
+.origen{
+    margin-top: -5%;
+    margin-bottom: 0;
+    
 }
