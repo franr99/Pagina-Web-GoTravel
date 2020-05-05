@@ -76,7 +76,7 @@
                             <option value="3">Air Europa</option>
                         </select>
                         <h4>Por tan solo 55€</h4>
-                        <input type="submit" class="btnOferta">
+                        <input type="submit" class="btnOferta" value="Reservar">
                     </form>
 
                 </li>
@@ -85,9 +85,10 @@
                     <a href="#"><img src="img/londres_des.jpg" class="imagen"></a>
                     <h2>Londres</h2>
                     <p class="descripcion"> En su centro se alzan el imponente Palacio del Parlamento, la torre del icónico reloj "Big Ben" y la Abadía de Westminster, lugar de las coronaciones monárquicas británicas.</p>
-                    <form action="formulario_destino.php" method="GET">
+                    <form action="conexiones/reservaDestino.php" method="POST">
+                    <input type="hidden" name="idDestino" value="Londres"/>
                         <label class="datosreserva"> Origen</label>
-                        <select id="origen" class="custom-select">
+                        <select id="origen" class="custom-select" name="origen">
                             <option value="0">Madrid</option>
                             <option value="1">Barcelona</option>
                             <option value="2">Sevilla</option>
@@ -97,12 +98,12 @@
                         </select>
 
                         <label class="datosreserva"> Fecha de salida</label>
-                        <input id="fecha_ini" type="date" class="select-date" >
+                        <input id="fecha_ini" type="date" class="select-date" name="fecha_ini"/>
                         <label class="datosreserva"> Fecha de regreso</label>
-                        <input id="fecha_fin" type="date" class="select-date" >
+                        <input id="fecha_fin" type="date" class="select-date" name="fecha_fin"/>
 
                         <label class="datosreserva"> Compañia de vuelo</label>
-                        <select id="compañia" class="custom-select">
+                        <select id="compañia" class="custom-select" name="compania">
                             <option value="0">Ryanair</option>
                             <option value="1">Vueling</option>
                             <option value="2">Iberia</option>
@@ -119,9 +120,10 @@
                     <a href="#"><img src="img/paris.jpg" class="imagen"></a>
                     <h2>Paris</h2>
                     <p class="descripcion"> Su paisaje urbano del siglo XIX está entrecruzado por amplios bulevares y el río Sena. Destacan la Torre Eiffel y la catedral gótica de Notre Dame del siglo XII.</p>
-                    <form action="formulario_destino.php" method="GET">
+                    <form action="conexiones/reservaDestino.php" method="POST">
+                        <input type="hidden" name="idDestino" value="Paris"/>
                         <label class="datosreserva"> Origen</label>
-                        <select id="origen" class="custom-select">
+                        <select id="origen" class="custom-select" name="origen">
                             <option value="0">Madrid</option>
                             <option value="1">Barcelona</option>
                             <option value="3">Valencia</option>
@@ -129,12 +131,12 @@
                         </select>
 
                         <label class="datosreserva"> Fecha de salida</label>
-                        <input id="fecha_ini" type="date" class="select-date" >
+                        <input id="fecha_ini" type="date" class="select-date" name="fecha_ini"/>
                         <label class="datosreserva"> Fecha de regreso</label>
-                        <input id="fecha_fin" type="date" class="select-date" >
+                        <input id="fecha_fin" type="date" class="select-date" name="fecha_fin"/>
 
                         <label class="datosreserva"> Compañia de vuelo</label>
-                        <select id="compañia" class="custom-select">
+                        <select id="compañia" class="custom-select" name="compania">
                             <option value="0">Ryanair</option>
                             <option value="2">Iberia</option>
                             <option value="3">Air Europa</option>
@@ -150,20 +152,21 @@
                     <a href="#"><img src="img/tokyo_des.jpg" class="imagen"></a>
                     <h2>Tokyo</h2>
                     <p class="descripcion"> Mezcla lo ultramoderno y lo tradicional, desde los rascacielos iluminados con neones hasta los templos históricos. Destacan el santuario Shinto Meiji y el Palacio Imperial.</p>
-                    <form action="formulario_destino.php" method="GET">
+                    <form action="conexiones/reservaDestino.php" method="POST">
+                        <input type="hidden" name="idDestino" value="Tokyo"/>
                         <label class="datosreserva"> Origen</label>
-                        <select id="origen" class="custom-select">
+                        <select id="origen" class="custom-select" name="origen">
                             <option value="0">Madrid</option>
                             <option value="1">Barcelona</option>
                         </select>
 
                         <label class="datosreserva"> Fecha de salida</label>
-                        <input id="fecha_ini" type="date" class="select-date" >
+                        <input id="fecha_ini" type="date" class="select-date" name="fecha_ini"/>
                         <label class="datosreserva"> Fecha de regreso</label>
-                        <input id="fecha_fin" type="date" class="select-date" >
+                        <input id="fecha_fin" type="date" class="select-date" name="fecha_fin"/>
 
                         <label class="datosreserva"> Compañia de vuelo</label>
-                        <select id="compañia" class="custom-select">
+                        <select id="compañia" class="custom-select" name="compania">
                             <option value="1">Vueling</option>
                             <option value="2">Iberia</option>
 
@@ -179,9 +182,10 @@
                     <a href="#"><img src="img/ibiza_des.jpg" class="imagen"></a>
                     <h2>Ibiza</h2>
                     <p class="descripcion"> Es conocida por su animada vida nocturna; muchas discotecas europeas tienen sucursales aquí. Destacan al sur del centro, sus playas Ses Figueretes y Platja d'en Bossa. </p>
-                    <form action="formulario_destino.php" method="GET">
+                    <form action="conexiones/reservaDestino.php" method="POST">
+                        <input type="hidden" name="idDestino" value="Ibiza"/>
                         <label class="datosreserva"> Origen</label>
-                        <select id="origen" class="custom-select">
+                        <select id="origen" class="custom-select" name="origen">
                             <option value="0">Madrid</option>
                             <option value="1">Barcelona</option>
                             <option value="2">Sevilla</option>
@@ -190,12 +194,12 @@
                         </select>
 
                         <label class="datosreserva"> Fecha de salida</label>
-                        <input id="fecha_ini" type="date" class="select-date" >
+                        <input id="fecha_ini" type="date" class="select-date" name="fecha_ini"/>
                         <label class="datosreserva"> Fecha de regreso</label>
-                        <input id="fecha_fin" type="date" class="select-date" >
+                        <input id="fecha_fin" type="date" class="select-date" name="fecha_fin"/>
 
                         <label class="datosreserva"> Compañia de vuelo</label>
-                        <select id="compañia" class="custom-select">
+                        <select id="compañia" class="custom-select" name="compania">
                             <option value="0">Ryanair</option>
                             <option value="2">Iberia</option>
                             <option value="3">Air Europa</option>
@@ -211,21 +215,22 @@
                     <a href="#"><img src="img/new_york_des.jpg" class="imagen"></a>
                     <h2>New York</h2>
                     <p class="descripcion">En su centro se encuentra Manhattan, un distrito densamente poblado que se encuentra entre los principales centros comerciales, financieros y culturales del mundo.</p>
-                    <form action="formulario_destino.php" method="GET">
+                    <form action="conexiones/reservaDestino.php" method="POST">
+                        <input type="hidden" name="idDestino" value="New York"/>
                         <label class="datosreserva"> Origen</label>
-                        <select id="origen" class="custom-select">
+                        <select id="origen" class="custom-select" name="origen">
                             <option value="0">Madrid</option>
                             <option value="1">Barcelona</option>
 
                         </select>
 
                         <label class="datosreserva"> Fecha de salida</label>
-                        <input id="fecha_ini" type="date" class="select-date" >
+                        <input id="fecha_ini" type="date" class="select-date" name="fecha_ini"/>
                         <label class="datosreserva"> Fecha de regreso</label>
-                        <input id="fecha_fin" type="date" class="select-date" >
+                        <input id="fecha_fin" type="date" class="select-date" name="fecha_fin"/>
 
                         <label class="datosreserva"> Compañia de vuelo</label>
-                        <select id="compañia" class="custom-select">
+                        <select id="compañia" class="custom-select" name="compania">
                             <option value="1">Vueling</option>
                             <option value="2">Iberia</option>
 
@@ -241,9 +246,10 @@
                     <a href="#"><img src="img/cracovia_des.jpg" class="imagen"></a>
                     <h2>Cracovia</h2>
                     <p class="descripcion">Conocida por su centro medieval bien conservado y su barrio judío. Su ciudad antigua, rodeada por el parque Planty y los restos de las murallas medievales de la ciudad.</p>
-                    <form action="formulario_destino.php" method="GET">
+                    <form action="conexiones/reservaDestino.php" method="POST">
+                        <input type="hidden" name="idDestino" value="Cracovia"/>
                         <label class="datosreserva"> Origen</label>
-                        <select id="origen" class="custom-select">
+                        <select id="origen" class="custom-select" name="origen">
                             <option value="0">Madrid</option>
                             <option value="1">Barcelona</option>
                             <option value="2">Sevilla</option>
@@ -251,12 +257,12 @@
                         </select>
 
                         <label class="datosreserva"> Fecha de salida</label>
-                        <input id="fecha_ini" type="date" class="select-date" >
+                        <input id="fecha_ini" type="date" class="select-date" name="fecha_ini"/>
                         <label class="datosreserva"> Fecha de regreso</label>
-                        <input id="fecha_fin" type="date" class="select-date" >
+                        <input id="fecha_fin" type="date" class="select-date" name="fecha_fin"/>
 
                         <label class="datosreserva"> Compañia de vuelo</label>
-                        <select id="compañia" class="custom-select">
+                        <select id="compañia" class="custom-select" name="compania">
                             <option value="0">Ryanair</option>
                             <option value="1">Vueling</option>
                             <option value="3">Air Europa</option>
@@ -272,9 +278,10 @@
                     <a href="#"><img src="img/lisboa.jpeg" class="imagen"></a>
                     <h2>Lisboa</h2>
                     <p class="descripcion">Desde el imponente castillo de San Jorge, la vista abarca los edificios de colores pastel en la ciudad antigua, el estuario del Tajo y el puente colgante 25 de Abril.</p>
-                    <form action="formulario_destino.php" method="GET">
+                    <form action="conexiones/reservaDestino.php" method="POST">
+                        <input type="hidden" name="idDestino" value="Lisboa"/>
                         <label class="datosreserva"> Origen</label>
-                        <select id="origen" class="custom-select">
+                        <select id="origen" class="custom-select" name="origen">
                             <option value="0">Madrid</option>
                             <option value="1">Barcelona</option>
                             <option value="3">Valencia</option>
@@ -283,12 +290,12 @@
                         </select>
 
                         <label class="datosreserva"> Fecha de salida</label>
-                        <input id="fecha_ini" type="date" class="select-date" >
+                        <input id="fecha_ini" type="date" class="select-date" name="fecha_ini"/>
                         <label class="datosreserva"> Fecha de regreso</label>
-                        <input id="fecha_fin" type="date" class="select-date" >
+                        <input id="fecha_fin" type="date" class="select-date" name="fecha_fin"/>
 
                         <label class="datosreserva"> Compañia de vuelo</label>
-                        <select id="compañia" class="custom-select">
+                        <select id="compañia" class="custom-select" name="compania">
                             <option value="1">Vueling</option>
                             <option value="2">Iberia</option>
                             <option value="3">Air Europa</option>
@@ -304,9 +311,10 @@
                     <a href="#"><img src="img/madrid_des.jpg" class="imagen"></a>
                     <h2>Madrid</h2>
                     <p class="descripcion">Es famosa por sus ricas colecciones de arte europeo, con obras de Goya, Velázquez y otros maestros españoles en el Museo del Prado. Destacan la Plaza Mayor o el Palacio Real.</p>
-                    <form action="formulario_destino.php" method="GET">
+                    <form action="conexiones/reservaDestino.php" method="POST">
+                        <input type="hidden" name="idDestino" value="Madrid"/>
                         <label class="datosreserva"> Origen</label>
-                        <select id="origen" class="custom-select">
+                        <select id="origen" class="custom-select" name="origen">
                             <option value="1">Barcelona</option>
                             <option value="2">Sevilla</option>
                             <option value="3">Valencia</option>
@@ -315,12 +323,12 @@
                         </select>
 
                         <label class="datosreserva"> Fecha de salida</label>
-                        <input id="fecha_ini" type="date" class="select-date" >
+                        <input id="fecha_ini" type="date" class="select-date" name="fecha_ini"/>
                         <label class="datosreserva"> Fecha de regreso</label>
-                        <input id="fecha_fin" type="date" class="select-date" >
+                        <input id="fecha_fin" type="date" class="select-date" name="fecha_fin"/>
 
                         <label class="datosreserva"> Compañia de vuelo</label>
-                        <select id="compañia" class="custom-select">
+                        <select id="compañia" class="custom-select" name="compania">
                             <option value="0">Ryanair</option>
                             <option value="1">Vueling</option>
                             <option value="2">Iberia</option>
@@ -337,9 +345,10 @@
                     <a href="#"><img src="img/barcelona_des.jpg" class="imagen"></a>
                     <h2>Barcelona</h2>
                     <p class="descripcion">Es conocida por su arte y arquitectura. La fantástica iglesia de la Sagrada Familia y otros hitos modernistas diseñados por Antoni Gaudí adornan la ciudad.</p>
-                    <form action="formulario_destino.php" method="GET">
+                    <form action="conexiones/reservaDestino.php" method="POST">
+                        <input type="hidden" name="idDestino" value="Barcelona"/>
                         <label class="datosreserva"> Origen</label>
-                        <select id="origen" class="custom-select">
+                        <select id="origen" class="custom-select" name="origen">
                             <option value="0">Madrid</option>
                             <option value="2">Sevilla</option>
                             <option value="3">Valencia</option>
@@ -348,12 +357,12 @@
                         </select>
 
                         <label class="datosreserva"> Fecha de salida</label>
-                        <input id="fecha_ini" type="date" class="select-date" >
+                        <input id="fecha_ini" type="date" class="select-date" name="fecha_ini"/>
                         <label class="datosreserva"> Fecha de regreso</label>
-                        <input id="fecha_fin" type="date" class="select-date" >
+                        <input id="fecha_fin" type="date" class="select-date" name="fecha_fin"/>
 
                         <label class="datosreserva"> Compañia de vuelo</label>
-                        <select id="compañia" class="custom-select">
+                        <select id="compañia" class="custom-select" name="compania">
                             <option value="0">Ryanair</option>
                             <option value="1">Vueling</option>
                             <option value="2">Iberia</option>
@@ -370,9 +379,10 @@
                     <a href="#"><img src="img/roma_des.jpg" class="imagen"></a>
                     <h2>Roma</h2>
                     <p class="descripcion">Es una extensa ciudad cosmopolita que tiene a la vista casi 3,000 años de arte, arquitectura y cultura de influencia mundial. Destacan Las ruinas antiguas como las del Foro y el Coliseo Romano.</p>
-                    <form action="formulario_destino.php" method="GET">
+                    <form action="conexiones/reservaDestino.php" method="POST">
+                        <input type="hidden" name="idDestino" value="Roma"/>
                         <label class="datosreserva"> Origen</label>
-                        <select id="origen" class="custom-select">
+                        <select id="origen" class="custom-select" name="origen">
                             <option value="0">Madrid</option>
                             <option value="1">Barcelona</option>
                             <option value="2">Sevilla</option>
@@ -380,12 +390,12 @@
                         </select>
 
                         <label class="datosreserva"> Fecha de salida</label>
-                        <input id="fecha_ini" type="date" class="select-date" >
+                        <input id="fecha_ini" type="date" class="select-date" name="fecha_ini"/>
                         <label class="datosreserva"> Fecha de regreso</label>
-                        <input id="fecha_fin" type="date" class="select-date" >
+                        <input id="fecha_fin" type="date" class="select-date" name="fecha_fin"/>
 
                         <label class="datosreserva"> Compañia de vuelo</label>
-                        <select id="compañia" class="custom-select">
+                        <select id="compañia" class="custom-select" name="compania">
                             <option value="0">Ryanair</option>
                             <option value="1">Vueling</option>
                             <option value="2">Iberia</option>
@@ -402,9 +412,10 @@
                     <a href="#"><img src="img/napoles_des.jpg" class="imagen"></a>
                     <h2>Napoles</h2>
                     <p class="descripcion"> Es una ciudad del sur de Italia que se ubica en el golfo de Nápoles. Data del segundo milenio a. C. y tiene siglos de arte y arquitectura importantes como la catedral Duomo di San Gennaro.</p>
-                    <form action="formulario_destino.php" method="GET">
+                    <form action="conexiones/reservaDestino.php" method="POST">
+                        <input type="hidden" name="idDestino" value="Napoles"/>
                         <label class="datosreserva"> Origen</label>
-                        <select id="origen" class="custom-select">
+                        <select id="origen" class="custom-select" name="origen">
                             <option value="0">Madrid</option>
                             <option value="1">Barcelona</option>
                             <option value="2">Sevilla</option>
@@ -412,12 +423,12 @@
                         </select>
 
                         <label class="datosreserva"> Fecha de salida</label>
-                        <input id="fecha_ini" type="date" class="select-date" >
+                        <input id="fecha_ini" type="date" class="select-date" name="fecha_ini"/>
                         <label class="datosreserva"> Fecha de regreso</label>
-                        <input id="fecha_fin" type="date" class="select-date" >
+                        <input id="fecha_fin" type="date" class="select-date" name="fecha_fin"/>
 
                         <label class="datosreserva"> Compañia de vuelo</label>
-                        <select id="compañia" class="custom-select">
+                        <select id="compañia" class="custom-select" name="compania">
                             <option value="0">Ryanair</option>
                             <option value="2">Iberia</option>
                             <option value="3">Air Europa</option>
@@ -433,9 +444,10 @@
                     <a href="#"><img src="img/atenas_des.jpg" class="imagen"></a>
                     <h2>Atenas</h2>
                     <p class="descripcion"> Capital de Grecia, en la ciudad aún predominan los sitios geográficos del siglo V a. C., incluida la Acrópolis, una ciudadela sobre un monte con antiguos edificios, como el templo del Partenón.</p>
-                    <form action="formulario_destino.php" method="GET">
+                    <form action="conexiones/reservaDestino.php" method="POST">
+                        <input type="hidden" name="idDestino" value="Atenas"/>
                         <label class="datosreserva"> Origen</label>
-                        <select id="origen" class="custom-select">
+                        <select id="origen" class="custom-select" name="origen">
                             <option value="0">Madrid</option>
                             <option value="1">Barcelona</option>
                             <option value="3">Valencia</option>
@@ -443,12 +455,12 @@
                         </select>
 
                         <label class="datosreserva"> Fecha de salida</label>
-                        <input id="fecha_ini" type="date" class="select-date" >
+                        <input id="fecha_ini" type="date" class="select-date" name="fecha_ini"/>
                         <label class="datosreserva"> Fecha de regreso</label>
-                        <input id="fecha_fin" type="date" class="select-date" >
+                        <input id="fecha_fin" type="date" class="select-date" name="fecha_fin"/>
 
                         <label class="datosreserva"> Compañia de vuelo</label>
-                        <select id="compañia" class="custom-select">
+                        <select id="compañia" class="custom-select" name="compania">
                             <option value="1">Vueling</option>
                             <option value="2">Iberia</option>
                             <option value="3">Air Europa</option>
@@ -464,9 +476,10 @@
                     <a href="#"><img src="img/dublin_des.jpg" class="imagen"></a>
                     <h2>Dublín</h2>
                     <p class="descripcion"> Se encuentra en la costa este de Irlanda en la desembocadura del río Liffey. Sus edificios históricos incluyen el Castillo de Dublín, que data del siglo XIII, y la Catedral de San Patricio.</p>
-                    <form action="formulario_destino.php" method="GET">
+                    <form action="conexiones/reservaDestino.php" method="POST">
+                        <input type="hidden" name="idDestino" value="Dublin"/>
                         <label class="datosreserva"> Origen</label>
-                        <select id="origen" class="custom-select">
+                        <select id="origen" class="custom-select" name="origen">
                             <option value="0">Madrid</option>
                             <option value="1">Barcelona</option>
                             <option value="2">Sevilla</option>
@@ -475,12 +488,12 @@
                         </select>
 
                         <label class="datosreserva"> Fecha de salida</label>
-                        <input id="fecha_ini" type="date" class="select-date" >
+                        <input id="fecha_ini" type="date" class="select-date" name="fecha_ini"/>
                         <label class="datosreserva"> Fecha de regreso</label>
-                        <input id="fecha_fin" type="date" class="select-date" >
+                        <input id="fecha_fin" type="date" class="select-date" name="fecha_fin"/>
 
                         <label class="datosreserva"> Compañia de vuelo</label>
-                        <select id="compañia" class="custom-select">
+                        <select id="compañia" class="custom-select" name="compania">
                             <option value="0">Ryanair</option>
                             <option value="1">Vueling</option>
                             <option value="3">Air Europa</option>
@@ -496,9 +509,10 @@
                     <a href="#"><img src="img/oslo_des.jpg" class="imagen"></a>
                     <h2>Oslo</h2>
                     <p class="descripcion"> Famosa por sus áreas verdes y museos. Muchos de estos se encuentran en la Península de Bygdøy, incluido el Museo Marítimo Noruego y el Museo de barcos vikingos de Oslo.</p>
-                    <form action="formulario_destino.php" method="GET">
+                    <form action="conexiones/reservaDestino.php" method="POST">
+                        <input type="hidden" name="idDestino" value="OSLO"/>
                         <label class="datosreserva"> Origen</label>
-                        <select id="origen" class="custom-select">
+                        <select id="origen" class="custom-select" name="origen">
                             <option value="0">Madrid</option>
                             <option value="1">Barcelona</option>
                             <option value="2">Sevilla</option>
@@ -506,12 +520,12 @@
                         </select>
 
                         <label class="datosreserva"> Fecha de salida</label>
-                        <input id="fecha_ini" type="date" class="select-date" >
+                        <input id="fecha_ini" type="date" class="select-date" name="fecha_ini"/>
                         <label class="datosreserva"> Fecha de regreso</label>
-                        <input id="fecha_fin" type="date" class="select-date" >
+                        <input id="fecha_fin" type="date" class="select-date" name="fecha_fin"/>
 
                         <label class="datosreserva"> Compañia de vuelo</label>
-                        <select id="compañia" class="custom-select">
+                        <select id="compañia" class="custom-select" name="compania">
                             <option value="1">Vueling</option>
                             <option value="2">Iberia</option>
                             <option value="3">Air Europa</option>
@@ -527,21 +541,22 @@
                     <a href="#"><img src="img/copenhague_des.jpg" class="imagen"></a>
                     <h2>Copenhague</h2>
                     <p class="descripcion"> Capital de Dinamarca, el centro histórico de la ciudad alberga el palacio de Amalienborg de la familia real, el palacio de Christiansborg y el castillo de Rosenborg de la época renacentista.</p>
-                    <form action="formulario_destino.php" method="GET">
+                    <form action="conexiones/reservaDestino.php" method="POST">
+                        <input type="hidden" name="idDestino" value="Copenhague"/>
                         <label class="datosreserva"> Origen</label>
-                        <select id="origen" class="custom-select">
+                        <select id="origen" class="custom-select" name="origen">
                             <option value="0">Madrid</option>
                             <option value="1">Barcelona</option>
                             <option value="3">Valencia</option>
                         </select>
 
                         <label class="datosreserva"> Fecha de salida</label>
-                        <input id="fecha_ini" type="date" class="select-date" >
+                        <input id="fecha_ini" type="date" class="select-date" name="fecha_ini"/>
                         <label class="datosreserva"> Fecha de regreso</label>
-                        <input id="fecha_fin" type="date" class="select-date" >
+                        <input id="fecha_fin" type="date" class="select-date" name="fecha_fin"/>
 
                         <label class="datosreserva"> Compañia de vuelo</label>
-                        <select id="compañia" class="custom-select">
+                        <select id="compañia" class="custom-select" name="compania">
                             <option value="0">Ryanair</option>
                             <option value="2">Iberia</option>
                             <option value="3">Air Europa</option>
@@ -557,21 +572,22 @@
                     <a href="#"><img src="img/helsinki_des.jpg" class="imagen"></a>
                     <h2>Helsinki</h2>
                     <p class="descripcion"> Se ubica en una península del golfo de Finlandia. Está bordeada de instituciones como el Museo Nacional, que recorre la historia de Finlandia desde la Edad de Piedra hasta la actualidad.</p>
-                    <form action="formulario_destino.php" method="GET">
+                    <form action="conexiones/reservaDestino.php" method="POST">
+                        <input type="hidden" name="idDestino" value="Helsinki"/>
                         <label class="datosreserva"> Origen</label>
-                        <select id="origen" class="custom-select">
+                        <select id="origen" class="custom-select" name="origen">
                             <option value="0">Madrid</option>
                             <option value="1">Barcelona</option>
                             <option value="2">Sevilla</option>
                         </select>
 
                         <label class="datosreserva"> Fecha de salida</label>
-                        <input id="fecha_ini" type="date" class="select-date" >
+                        <input id="fecha_ini" type="date" class="select-date" name="fecha_ini"/>
                         <label class="datosreserva"> Fecha de regreso</label>
-                        <input id="fecha_fin" type="date" class="select-date" >
+                        <input id="fecha_fin" type="date" class="select-date" name="fecha_fin"/>
 
                         <label class="datosreserva"> Compañia de vuelo</label>
-                        <select id="compañia" class="custom-select">
+                        <select id="compañia" class="custom-select" name="compania">
                             <option value="1">Vueling</option>
                             <option value="2">Iberia</option>
                             <option value="3">Air Europa</option>
@@ -587,21 +603,22 @@
                     <a href="#"><img src="img/estocolmo_des.jpg" class="imagen"></a>
                     <h2>Estocolmo</h2>
                     <p class="descripcion"> Capital de Suecia, abarca 14 islas y más de 50 puentes en un extenso archipiélago del mar Báltico. Destaca por sus calles de adoquines y los edificios color ocre de Gamla Stan.</p>
-                    <form action="formulario_destino.php" method="GET">
+                    <form action="conexiones/reservaDestino.php" method="POST">
+                        <input type="hidden" name="idDestino" value="Estocolmo"/>
                         <label class="datosreserva"> Origen</label>
-                        <select id="origen" class="custom-select">
+                        <select id="origen" class="custom-select" name="origen">
                             <option value="0">Madrid</option>
                             <option value="1">Barcelona</option>
                             <option value="5">Bilbao</option>
                         </select>
 
                         <label class="datosreserva"> Fecha de salida</label>
-                        <input id="fecha_ini" type="date" class="select-date" >
+                        <input id="fecha_ini" type="date" class="select-date" name="fecha_ini"/>
                         <label class="datosreserva"> Fecha de regreso</label>
-                        <input id="fecha_fin" type="date" class="select-date" >
+                        <input id="fecha_fin" type="date" class="select-date" name="fecha_fin"/>
 
                         <label class="datosreserva"> Compañia de vuelo</label>
-                        <select id="compañia" class="custom-select">
+                        <select id="compañia" class="custom-select" name="compania">
                             <option value="2">Iberia</option>
                             <option value="3">Air Europa</option>
                         </select>
@@ -616,9 +633,10 @@
                     <a href="#"><img src="img/niza_des.jpg" class="imagen"></a>
                     <h2>Niza</h2>
                     <p class="descripcion"> La ciudad, situada en Francia, fue fundada por los griegos y más tarde un lugar de retiro para la elite europea del siglo XIX. Destaca por sus playas y su arte y cultura como el museo Mattise.</p>
-                    <form action="formulario_destino.php" method="GET">
+                    <form action="conexiones/reservaDestino.php" method="POST">
+                        <input type="hidden" name="idDestino" value="Niza"/>
                         <label class="datosreserva"> Origen</label>
-                        <select id="origen" class="custom-select">
+                        <select id="origen" class="custom-select" name="origen">
                             <option value="0">Madrid</option>
                             <option value="1">Barcelona</option>
                             <option value="2">Sevilla</option>
@@ -626,12 +644,12 @@
                         </select>
 
                         <label class="datosreserva"> Fecha de salida</label>
-                        <input id="fecha_ini" type="date" class="select-date" >
+                        <input id="fecha_ini" type="date" class="select-date" name="fecha_ini"/>
                         <label class="datosreserva"> Fecha de regreso</label>
-                        <input id="fecha_fin" type="date" class="select-date" >
+                        <input id="fecha_fin" type="date" class="select-date" name="fecha_fin"/>
 
                         <label class="datosreserva"> Compañia de vuelo</label>
-                        <select id="compañia" class="custom-select">
+                        <select id="compañia" class="custom-select" name="compania">
                             <option value="1">Vueling</option>
                             <option value="2">Iberia</option>
                             <option value="3">Air Europa</option>
@@ -647,20 +665,21 @@
                     <a href="#"><img src="img/sydney_des.jpg" class="imagen"></a>
                     <h2>Sydney</h2>
                     <p class="descripcion"> Sídney, capital de Nueva Gales del Sur y una de las ciudades más grandes de Australia, es famosa por su Casa de la Ópera de Sídney junto al puerto, con un característico diseño con forma de velas.</p>
-                    <form action="formulario_destino.php" method="GET">
+                    <form action="conexiones/reservaDestino.php" method="POST">
+                        <input type="hidden" name="idDestino" value="Sydney"/>
                         <label class="datosreserva"> Origen</label>
-                        <select id="origen" class="custom-select">
+                        <select id="origen" class="custom-select" name="origen">
                             <option value="0">Madrid</option>
                             <option value="1">Barcelona</option>
                         </select>
 
                         <label class="datosreserva"> Fecha de salida</label>
-                        <input id="fecha_ini" type="date" class="select-date" >
+                        <input id="fecha_ini" type="date" class="select-date" name="fecha_ini"/>
                         <label class="datosreserva"> Fecha de regreso</label>
-                        <input id="fecha_fin" type="date" class="select-date" >
+                        <input id="fecha_fin" type="date" class="select-date" name="fecha_fin"/>
 
                         <label class="datosreserva"> Compañia de vuelo</label>
-                        <select id="compañia" class="custom-select">
+                        <select id="compañia" class="custom-select" name="compania">
                             <option value="1">Vueling</option>
                             <option value="2">Iberia</option>
                         </select>

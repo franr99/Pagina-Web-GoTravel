@@ -16,6 +16,7 @@
     include('conexion.php');
     $link = conectar();
 
+        error_reporting(0);
         $idDestino = $_POST['idDestino'];
         $origen = $_POST['origen'];
         $fecha_ini = $_POST['fecha_ini'];
@@ -34,8 +35,9 @@
             $id = $_SESSION['id'];
             if($id != null || !$id == ''){
 
-            $qryLogin = "INSERT INTO Reserva (compania, tipo_reserva, origen, destino, fecha_ini, fecha_fin, id_usuario) VALUES ('$comViaje' , ' $tipo_compania ', '$ciudadOrigen' , ' $idDestino ', '$fecha_ini' , '$fecha_fin' , '$id')";
-            $rscLogin = mysqli_query($link, $qryLogin);
+            $qryReserva = "INSERT INTO Reserva (compania, tipo_reserva, origen, destino, fecha_ini, fecha_fin, id_usuario) VALUES ('$comViaje' , ' $tipo_compania ', '$ciudadOrigen' , ' $idDestino ', '$fecha_ini' , '$fecha_fin' , '$id')";
+            $rscReserva = mysqli_query($link, $qryReserva);
+
             Header( "Location: http://localhost/Practica%20WEB/index.php");
             }
             else{
@@ -60,7 +62,7 @@
                 <h4> Compañia </h4>
                 <input type="name" name="comViaje" class="form" value="<?php echo $arrayCompania[$compania] ?>" readonly="readonly">
                 <input type="submit" class="btnLogin" value="Reservar">
-
+                </form>
         </section>
 
     </body>

@@ -17,7 +17,6 @@
         $varsesion = $_SESSION['usuario'];
         $loginReserva = $_SESSION['loginReserva'];
         if($error=='1'){
-        //if (isset($_GET['error']) && $_GET['error'] == 1) {
     ?>
             <script> alert("Usuario o contraseña incorrectos") </script>
     
