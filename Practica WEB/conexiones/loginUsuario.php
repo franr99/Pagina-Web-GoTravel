@@ -20,7 +20,9 @@
         session_start();
         $_SESSION['usuario'] = $usuario;
         $fila = $rscLogin->fetch_row();
-	    $nombre = $fila[1];
+        $nombre = $fila[1];
+        $id = $fila[0];
+        $_SESSION['id'] = $id;
  	    $_SESSION['nombre'] = $nombre;
         Header( "Location: http://localhost/Practica%20WEB/index.php");
     }else{

@@ -1,28 +1,4 @@
-<?php
 
-include('conexion.php');
-$link = conectar();
-
-    $idDestino = $_POST['idDestino'];
-    $origen = $_POST['origen'];
-    $fecha_ini = $_POST['fecha_ini'];
-    $fecha_fin = $_POST['fecha_fin'];
-    $compania = $_POST['compania'];
-    $tipo_compania = "null";
-
-    $arraySalida = array("Madrid","Barcelona","Sevilla","Valencia","Cadiz","Bilbao");
-    $arrayCompania = array("Ryanair","Vueling","Iberia","Air Europa");
-
-    $ciudadOrigen = $_POST['ciudadOrigen'];
-    $comViaje = $_POST['comViaje'];
-
-    if($_POST['funcion']){
-
-        $qryLogin = "INSERT INTO Reserva (compania, tipo_reserva, origen, destino, fecha_ini, fecha_fin) VALUES ('$comViaje' , ' $tipo_compania ', '$ciudadOrigen' , ' $idDestino ', '$fecha_ini' , '$fecha_fin')";
-        $rscLogin = mysqli_query($link, $qryLogin);
-        Header( "Location: http://localhost/Practica%20WEB/index.php");
-    }
-?>
 
 <!DOCTYPE html>
 
@@ -34,6 +10,43 @@ $link = conectar();
         <title> Registrar</title>
     </head>
     <body>
+
+    <?php
+
+    include('conexion.php');
+    $link = conectar();
+
+        $idDestino = $_POST['idDestino'];
+        $origen = $_POST['origen'];
+        $fecha_ini = $_POST['fecha_ini'];
+        $fecha_fin = $_POST['fecha_fin'];
+        $compania = $_POST['compania'];
+        $tipo_compania = "null";
+
+        $arraySalida = array("Madrid","Barcelona","Sevilla","Valencia","Cadiz","Bilbao");
+        $arrayCompania = array("Ryanair","Vueling","Iberia","Air Europa");
+
+        $ciudadOrigen = $_POST['ciudadOrigen'];
+        $comViaje = $_POST['comViaje'];
+
+        if($_POST['funcion']){
+            session_start();
+            $id = $_SESSION['id'];
+            if($id != null || !$id == ''){
+
+            $qryLogin = "INSERT INTO Reserva (compania, tipo_reserva, origen, destino, fecha_ini, fecha_fin, id_usuario) VALUES ('$comViaje' , ' $tipo_compania ', '$ciudadOrigen' , ' $idDestino ', '$fecha_ini' , '$fecha_fin' , '$id')";
+            $rscLogin = mysqli_query($link, $qryLogin);
+            Header( "Location: http://localhost/Practica%20WEB/index.php");
+            }
+            else{
+    ?>
+                <script> alert("Debe iniciar sesión para realizar una reserva");
+    <?php
+                Header( "Location: http://localhost/Practica%20WEB/login.php");
+            }
+        }
+    ?>
+
         <section class="contenedor">
             <h2> Confirmar tu reserva</h2>
                 <h4 class="origen"> Origen </h4>

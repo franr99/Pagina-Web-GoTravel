@@ -36,7 +36,7 @@
         <section class="contenedor">
             <h2> Bienvenido</h2>
             <img src="img/logo-bueno.png" class="logo">
-            <form action="php/loginUsuario.php" method="POST">
+            <form action="conexiones/loginUsuario.php" method="POST">
                 <input type="email" name="email" maxlength="50" class="form" placeholder="email" required>
                 <input type="password" name="contra" maxlength="50" class="form" placeholder="contraseña" required>
                 <input type="submit" class="btnLogin" value="Iniciar Sesión">
