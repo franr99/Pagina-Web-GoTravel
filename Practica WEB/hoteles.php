@@ -60,20 +60,21 @@
                         <img src="img/hotel-berlin.jpg" class="imagen">
                         <h2>Meininger Berlin Airport</h2>
                         <p class="descripcion">El hotel se ubica en las inmediaciones del Aeropuerto Schönefeld: ideal para todos aquellos que desean hacer una breve escala en Berlín. Se llega al SXF en solo 5 minutos con el servicio de transporte público. </p>
-                        
-                        <label class="datosreserva"> Fecha de entrada</label>
-                        <input id="fecha_ini" type="date" class="select-date">
-                        <label class="datosreserva"> Fecha de salida</label>
-                        <input id="fecha_fin" type="date" class="select-date">
+                        <form action="php/reservaHotel.php" method="POST">
+                            <input type="hidden" name="idHotel" value="Meininger Berlin Airport"/>  
+                            <label class="datosreserva"> Fecha de entrada</label>
+                            <input id="fecha_ini" type="date" class="select-date" name="fecha_ini">
+                            <label class="datosreserva"> Fecha de salida</label>
+                            <input id="fecha_fin" type="date" class="select-date" name="fecha_fin">
 
-                        <label class="datosreserva"> Habitación</label>
-                        <select id="compañia" class="custom-select">
-                            <option value="1">habitación doble</option>
-                            <option value="2">habitación triple</option>
-                        </select>
-                        <h4>Desde 50,50€</h4>
-                        <a href="hoteles/Meininger.html"><button type="button" class="btnHotel"> Reservar</button></a>
-    
+                            <label class="datosreserva"> Habitación</label>
+                            <select id="tipo_reserva" class="custom-select" name="tipo_reserva">
+                                <option value="0">habitación doble</option>
+                                <option value="1">habitación triple</option>
+                            </select>
+                            <h4>Desde 50,50€</h4>
+                            <a href="#"><button type="submit" class="btnHotel">Reservar</button></a>
+                        </form>
                     </li>
                     <li class="hoteles">
                         

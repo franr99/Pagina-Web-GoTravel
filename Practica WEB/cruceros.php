@@ -66,21 +66,22 @@
                     <h2>Italia</h2>
                     <p class="descripcion">Descubre Roma y Napoles con nuestros cruceros MSC al mejor precio</p>
                     <p class="duracion">6 días, salida desde Barcelona, 29/08/2020</p>
-                    
-                    <label class="datosreserva"> Fecha de entrada</label>
-                        <input id="fecha_ini" type="date" class="select-date">
-                        <label class="datosreserva"> Fecha de salida</label>
-                        <input id="fecha_fin" type="date" class="select-date">
+                    <form action="php/reservaCrucero.php" method="POST">
+                        <input type="hidden" name="idCrucero" value="Italia"/>
+                        <label class="datosreserva"> Fecha de entrada</label>
+                            <input id="fecha_ini" type="date" class="select-date" name="fecha_ini">
+                            <label class="datosreserva"> Fecha de salida</label>
+                            <input id="fecha_fin" type="date" class="select-date" name="fecha_fin">
 
-                        <label class="datosreserva"> habitación</label>
-                        <select id="compañia" class="custom-select">
-                            <option value="1">habitación doble</option>
-                            <option value="2">habitación triple</option>
-                            <option value="3">habitación familiar</option>
-                        </select>
-                    <h4>Desde 450€</h4>
-                    <a href="#"><button type="button" class="btnOferta"> Mostrar más</button></a>
-
+                            <label class="datosreserva"> habitación</label>
+                            <select id="tipo_reserva" class="custom-select" name="tipo_reserva">
+                                <option value="0">habitación doble</option>
+                                <option value="1">habitación triple</option>
+                                <option value="2">habitación familiar</option>
+                            </select>
+                        <h4>Desde 450€</h4>
+                        <a href="#"><button type="submit" class="btnOferta"> Mostrar más</button></a>
+                    </form>
                 </li>
 
                 <li class="ofertas">
@@ -97,9 +98,9 @@
 
                         <label class="datosreserva"> Habitación</label>
                         <select id="compañia" class="custom-select">
-                            <option value="1">habitación doble</option>
-                            <option value="2">habitación triple</option>
-                            <option value="3">habitación familiar</option>
+                            <option value="0">habitación doble</option>
+                            <option value="1">habitación triple</option>
+                            <option value="2">habitación familiar</option>
                         </select>
                     <h4>Desde 550€</h4>
                     <a href="#"><button type="button" class="btnOferta"> Mostrar más</button></a>
