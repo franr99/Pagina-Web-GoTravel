@@ -39,9 +39,7 @@
             Header( "Location: http://localhost/Practica%20WEB/index.php");
             }
             else{
-    ?>
-                <script> alert("Debe iniciar sesión para realizar una reserva");
-    <?php
+                $_SESSION['loginReserva'] = '1';
                 Header( "Location: http://localhost/Practica%20WEB/login.php");
             }
         }

@@ -15,10 +15,11 @@
         $error = $_SESSION['login'];
         $registro = $_SESSION['registro'];
         $varsesion = $_SESSION['usuario'];
+        $loginReserva = $_SESSION['loginReserva'];
         if($error=='1'){
         //if (isset($_GET['error']) && $_GET['error'] == 1) {
     ?>
-        <script> alert("Usuario o contraseña incorrectos") </script>
+            <script> alert("Usuario o contraseña incorrectos") </script>
     
     <?php
         }
@@ -30,6 +31,11 @@
         }
         if($varsesion != null || !$varsesion == ''){
             Header( "Location: http://localhost/Practica%20WEB/perfil.php");
+        }
+        if($loginReserva=='1'){
+    ?>
+            <script> alert("Debe iniciar sesión para realizar una reserva");</script>
+    <?php
         }
       ?>
 
