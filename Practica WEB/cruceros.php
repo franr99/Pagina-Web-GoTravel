@@ -93,20 +93,24 @@
                     <p class="descripcion">Descubre Grecia con nuestros cruceros MSC al mejor precio</p>
                     <p class="duracion">7 días, salida desde Barcelona.</p>
                     
-                    <label class="datosreserva"> Fecha de entrada</label>
-                        <input id="fecha_ini" type="date" class="select-date">
-                        <label class="datosreserva"> Fecha de salida</label>
-                        <input id="fecha_fin" type="date" class="select-date">
+                    <form action="conexiones/reservaCrucero.php" method="POST">
+                        <input type="hidden" name="idCrucero" value="Islas Griegas"/>
+                        <input type="hidden" name="compania" value="MSC">
+                        <input type="hidden" name="origen" value="Barcelona">
+                        <label class="datosreserva"> Fecha de entrada</label>
+                            <input id="fecha_ini" type="date" class="select-date" name="fecha_ini">
+                            <label class="datosreserva"> Fecha de salida</label>
+                            <input id="fecha_fin" type="date" class="select-date" name="fecha_fin">
 
-                        <label class="datosreserva"> Habitación</label>
-                        <select id="compañia" class="custom-select">
-                            <option value="0">habitación doble</option>
-                            <option value="1">habitación triple</option>
-                            <option value="2">habitación familiar</option>
-                        </select>
-                    <h4>Desde 550€</h4>
-                    <a href="#"><button type="button" class="btnOferta"> Mostrar más</button></a>
-
+                            <label class="datosreserva"> habitación</label>
+                            <select id="tipo_reserva" class="custom-select" name="tipo_reserva">
+                                <option value="0">habitación doble</option>
+                                <option value="1">habitación triple</option>
+                                <option value="2">habitación familiar</option>
+                            </select>
+                        <h4>Desde 550€</h4>
+                        <a href="#"><button type="submit" class="btnOferta"> Mostrar más</button></a>
+                    </form>
                 </li>
 
                 <li class="ofertas">
@@ -116,20 +120,24 @@
                     <p class="descripcion">Descubre Londres, Dublin y las Islas Feroe con nuestros cruceros MSC al mejor precio</p>
                     <p class="duracion">8 días, salida desde Cadiz.</p>
                     
-                    <label class="datosreserva"> Fecha de entrada</label>
-                        <input id="fecha_ini" type="date" class="select-date">
-                        <label class="datosreserva"> Fecha de salida</label>
-                        <input id="fecha_fin" type="date" class="select-date">
+                    <form action="conexiones/reservaCrucero.php" method="POST">
+                        <input type="hidden" name="idCrucero" value="Atlantico"/>
+                        <input type="hidden" name="compania" value="MSC">
+                        <input type="hidden" name="origen" value="Cadiz">
+                        <label class="datosreserva"> Fecha de entrada</label>
+                            <input id="fecha_ini" type="date" class="select-date" name="fecha_ini">
+                            <label class="datosreserva"> Fecha de salida</label>
+                            <input id="fecha_fin" type="date" class="select-date" name="fecha_fin">
 
-                        <label class="datosreserva"> Habitación</label>
-                        <select id="compañia" class="custom-select">
-                            <option value="1">habitación doble</option>
-                            <option value="2">habitación triple</option>
-                            <option value="3">habitación familiar</option>
-                        </select>
-                    <h4>Desde 500€</h4>
-                    <a href="#"><button type="button" class="btnOferta"> Mostrar más</button></a>
-
+                            <label class="datosreserva"> habitación</label>
+                            <select id="tipo_reserva" class="custom-select" name="tipo_reserva">
+                                <option value="0">habitación doble</option>
+                                <option value="1">habitación triple</option>
+                                <option value="2">habitación familiar</option>
+                            </select>
+                        <h4>Desde 500€</h4>
+                        <a href="#"><button type="submit" class="btnOferta"> Mostrar más</button></a>
+                    </form>
                 </li>
 
                 <li class="ofertas">
@@ -139,20 +147,24 @@
                     <p class="descripcion">Descubre Lisboa, Londres y Dublín con nuestros cruceros Pullmantur</p>
                     <p class="duracion">7 días, salida desde Cadiz.</p>
                     
-                    <label class="datosreserva"> Fecha de entrada</label>
-                        <input id="fecha_ini" type="date" class="select-date">
-                        <label class="datosreserva"> Fecha de salida</label>
-                        <input id="fecha_fin" type="date" class="select-date">
+                    <form action="conexiones/reservaCrucero.php" method="POST">
+                        <input type="hidden" name="idCrucero" value="Atlantico"/>
+                        <input type="hidden" name="compania" value="Pullmantur">
+                        <input type="hidden" name="origen" value="Cadiz">
+                        <label class="datosreserva"> Fecha de entrada</label>
+                            <input id="fecha_ini" type="date" class="select-date" name="fecha_ini">
+                            <label class="datosreserva"> Fecha de salida</label>
+                            <input id="fecha_fin" type="date" class="select-date" name="fecha_fin">
 
-                        <label class="datosreserva"> Habitación</label>
-                        <select id="compañia" class="custom-select">
-                            <option value="1">habitación doble</option>
-                            <option value="2">habitación triple</option>
-                            <option value="3">habitación familiar</option>
-                        </select>
-                    <h4>Desde 450€</h4>
-                    <a href="#"><button type="button" class="btnOferta"> Mostrar más</button></a>
-
+                            <label class="datosreserva"> habitación</label>
+                            <select id="tipo_reserva" class="custom-select" name="tipo_reserva">
+                                <option value="0">habitación doble</option>
+                                <option value="1">habitación triple</option>
+                                <option value="2">habitación familiar</option>
+                            </select>
+                        <h4>Desde 450€</h4>
+                        <a href="#"><button type="submit" class="btnOferta"> Mostrar más</button></a>
+                    </form>
                 </li>
 
                 <li class="ofertas">
@@ -162,20 +174,24 @@
                     <p class="descripcion">Descubre Ibiza, Roma y Atenas con nuestros cruceros Pullmantur</p>
                     <p class="duracion">8 días, salida desde Barcelona.</p>
                     
-                    <label class="datosreserva"> Fecha de entrada</label>
-                        <input id="fecha_ini" type="date" class="select-date">
-                        <label class="datosreserva"> Fecha de salida</label>
-                        <input id="fecha_fin" type="date" class="select-date">
+                    <form action="conexiones/reservaCrucero.php" method="POST">
+                        <input type="hidden" name="idCrucero" value="Mediterraneo"/>
+                        <input type="hidden" name="compania" value="Pullmantur">
+                        <input type="hidden" name="origen" value="Barcelona">
+                        <label class="datosreserva"> Fecha de entrada</label>
+                            <input id="fecha_ini" type="date" class="select-date" name="fecha_ini">
+                            <label class="datosreserva"> Fecha de salida</label>
+                            <input id="fecha_fin" type="date" class="select-date" name="fecha_fin">
 
-                        <label class="datosreserva"> Habitación</label>
-                        <select id="compañia" class="custom-select">
-                            <option value="1">habitación doble</option>
-                            <option value="2">habitación triple</option>
-                            <option value="3">habitación familiar</option>
-                        </select>
-                    <h4>Desde 600€</h4>
-                    <a href="#"><button type="button" class="btnOferta"> Mostrar más</button></a>
-
+                            <label class="datosreserva"> habitación</label>
+                            <select id="tipo_reserva" class="custom-select" name="tipo_reserva">
+                                <option value="0">habitación doble</option>
+                                <option value="1">habitación triple</option>
+                                <option value="2">habitación familiar</option>
+                            </select>
+                        <h4>Desde 600€</h4>
+                        <a href="#"><button type="submit" class="btnOferta"> Mostrar más</button></a>
+                    </form>
                 </li>
 
                 <li class="ofertas">
@@ -183,22 +199,26 @@
                     <img src="img/norwegian_cruceros2.jpg" class="imagen">
                     <h2>Europa del norte</h2>
                     <p class="descripcion">Descubre Oslo, Helsinki y Estocolmo con nuestros cruceros Norwegian</p>
-                    <p class="duracion">9 días, salida desde Cadiz.</p>
+                    <p class="duracion">9 días, salida desde Galicia.</p>
                     
-                    <label class="datosreserva"> Fecha de entrada</label>
-                        <input id="fecha_ini" type="date" class="select-date">
-                        <label class="datosreserva"> Fecha de salida</label>
-                        <input id="fecha_fin" type="date" class="select-date">
+                    <form action="conexiones/reservaCrucero.php" method="POST">
+                        <input type="hidden" name="idCrucero" value="Europa del norte"/>
+                        <input type="hidden" name="compania" value=Norwegian">
+                        <input type="hidden" name="origen" value="Galicia">
+                        <label class="datosreserva"> Fecha de entrada</label>
+                            <input id="fecha_ini" type="date" class="select-date" name="fecha_ini">
+                            <label class="datosreserva"> Fecha de salida</label>
+                            <input id="fecha_fin" type="date" class="select-date" name="fecha_fin">
 
-                        <label class="datosreserva"> Habitación</label>
-                        <select id="compañia" class="custom-select">
-                            <option value="1">habitación doble</option>
-                            <option value="2">habitación triple</option>
-                            <option value="3">habitación familiar</option>
-                        </select>
-                    <h4>Desde 1500€</h4>
-                    <a href="#"><button type="button" class="btnOferta"> Mostrar más</button></a>
-
+                            <label class="datosreserva"> habitación</label>
+                            <select id="tipo_reserva" class="custom-select" name="tipo_reserva">
+                                <option value="0">habitación doble</option>
+                                <option value="1">habitación triple</option>
+                                <option value="2">habitación familiar</option>
+                            </select>
+                        <h4>Desde 1500€</h4>
+                        <a href="#"><button type="submit" class="btnOferta"> Mostrar más</button></a>
+                    </form>
                 </li>
 
                 <li class="ofertas">
@@ -206,22 +226,26 @@
                     <img src="img/cruceros_norweigan.jpg" class="imagen">
                     <h2>Mar del norte</h2>
                     <p class="descripcion">Descubre Oslo, Copenhague, y Helsinki con nuestros cruceros Norwegian</p>
-                    <p class="duracion">9 días, salida desde Cadiz.</p>
+                    <p class="duracion">9 días, salida desde Galicia.</p>
                     
-                    <label class="datosreserva"> Fecha de entrada</label>
-                        <input id="fecha_ini" type="date" class="select-date">
-                        <label class="datosreserva"> Fecha de salida</label>
-                        <input id="fecha_fin" type="date" class="select-date">
+                    <form action="conexiones/reservaCrucero.php" method="POST">
+                        <input type="hidden" name="idCrucero" value="Mar del norte"/>
+                        <input type="hidden" name="compania" value="Norwegian">
+                        <input type="hidden" name="origen" value="Galicia">
+                        <label class="datosreserva"> Fecha de entrada</label>
+                            <input id="fecha_ini" type="date" class="select-date" name="fecha_ini">
+                            <label class="datosreserva"> Fecha de salida</label>
+                            <input id="fecha_fin" type="date" class="select-date" name="fecha_fin">
 
-                        <label class="datosreserva"> Habitación</label>
-                        <select id="compañia" class="custom-select">
-                            <option value="1">habitación doble</option>
-                            <option value="2">habitación triple</option>
-                            <option value="3">habitación familiar</option>
-                        </select>
-                    <h4>Desde 1200€</h4>
-                    <a href="#"><button type="button" class="btnOferta"> Mostrar más</button></a>
-
+                            <label class="datosreserva"> habitación</label>
+                            <select id="tipo_reserva" class="custom-select" name="tipo_reserva">
+                                <option value="0">habitación doble</option>
+                                <option value="1">habitación triple</option>
+                                <option value="2">habitación familiar</option>
+                            </select>
+                        <h4>Desde 1200€</h4>
+                        <a href="#"><button type="submit" class="btnOferta"> Mostrar más</button></a>
+                    </form>
                 </li>
 
                 <li class="ofertas">
@@ -231,20 +255,24 @@
                     <p class="descripcion">Descubre Ibiza, Niza, Roma y Napoles con nuestros cruceros Costa</p>
                     <p class="duracion">8 días, salida desde Valencia.</p>
                     
-                    <label class="datosreserva"> Fecha de entrada</label>
-                        <input id="fecha_ini" type="date" class="select-date">
-                        <label class="datosreserva"> Fecha de salida</label>
-                        <input id="fecha_fin" type="date" class="select-date">
+                    <form action="conexiones/reservaCrucero.php" method="POST">
+                        <input type="hidden" name="idCrucero" value="Mediterraneo"/>
+                        <input type="hidden" name="compania" value="Costa">
+                        <input type="hidden" name="origen" value="Valencia">
+                        <label class="datosreserva"> Fecha de entrada</label>
+                            <input id="fecha_ini" type="date" class="select-date" name="fecha_ini">
+                            <label class="datosreserva"> Fecha de salida</label>
+                            <input id="fecha_fin" type="date" class="select-date" name="fecha_fin">
 
-                        <label class="datosreserva"> Habitación</label>
-                        <select id="compañia" class="custom-select">
-                            <option value="1">habitación doble</option>
-                            <option value="2">habitación triple</option>
-                            <option value="3">habitación familiar</option>
-                        </select>
-                    <h4>Desde 600€</h4>
-                    <a href="#"><button type="button" class="btnOferta"> Mostrar más</button></a>
-
+                            <label class="datosreserva"> habitación</label>
+                            <select id="tipo_reserva" class="custom-select" name="tipo_reserva">
+                                <option value="0">habitación doble</option>
+                                <option value="1">habitación triple</option>
+                                <option value="2">habitación familiar</option>
+                            </select>
+                        <h4>Desde 600€</h4>
+                        <a href="#"><button type="submit" class="btnOferta"> Mostrar más</button></a>
+                    </form>
                 </li>
 
                 
