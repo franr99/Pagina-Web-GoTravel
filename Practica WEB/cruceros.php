@@ -65,9 +65,11 @@
                     <img src="img/cruceros_med.jpg" class="imagen">
                     <h2>Italia</h2>
                     <p class="descripcion">Descubre Roma y Napoles con nuestros cruceros MSC al mejor precio</p>
-                    <p class="duracion">6 días, salida desde Barcelona, 29/08/2020</p>
-                    <form action="php/reservaCrucero.php" method="POST">
+                    <p class="duracion">6 días, salida desde Barcelona.</p>
+                    <form action="conexiones/reservaCrucero.php" method="POST">
                         <input type="hidden" name="idCrucero" value="Italia"/>
+                        <input type="hidden" name="compania" value="MSC">
+                        <input type="hidden" name="origen" value="Barcelona">
                         <label class="datosreserva"> Fecha de entrada</label>
                             <input id="fecha_ini" type="date" class="select-date" name="fecha_ini">
                             <label class="datosreserva"> Fecha de salida</label>
@@ -89,7 +91,7 @@
                     <img src="img/msc_cruceros2.jpg" class="imagen">
                     <h2>Islas Griegas</h2>
                     <p class="descripcion">Descubre Grecia con nuestros cruceros MSC al mejor precio</p>
-                    <p class="duracion">7 días, salida desde Barcelona, 22/08/2020</p>
+                    <p class="duracion">7 días, salida desde Barcelona.</p>
                     
                     <label class="datosreserva"> Fecha de entrada</label>
                         <input id="fecha_ini" type="date" class="select-date">
@@ -112,7 +114,7 @@
                     <img src="img/msc_cruceros3.jpg" class="imagen">
                     <h2>Atlantico</h2>
                     <p class="descripcion">Descubre Londres, Dublin y las Islas Feroe con nuestros cruceros MSC al mejor precio</p>
-                    <p class="duracion">8 días, salida desde Cadiz, 11/08/2020</p>
+                    <p class="duracion">8 días, salida desde Cadiz.</p>
                     
                     <label class="datosreserva"> Fecha de entrada</label>
                         <input id="fecha_ini" type="date" class="select-date">
@@ -135,7 +137,7 @@
                     <img src="img/pullmantur_cruceros2.jpg" class="imagen">
                     <h2>Atlantico</h2>
                     <p class="descripcion">Descubre Lisboa, Londres y Dublín con nuestros cruceros Pullmantur</p>
-                    <p class="duracion">7 días, salida desde Cadiz, 11/08/2020</p>
+                    <p class="duracion">7 días, salida desde Cadiz.</p>
                     
                     <label class="datosreserva"> Fecha de entrada</label>
                         <input id="fecha_ini" type="date" class="select-date">
@@ -158,7 +160,7 @@
                     <img src="img/pullmantur_cruceros3.jpg" class="imagen">
                     <h2>Mediterraneo</h2>
                     <p class="descripcion">Descubre Ibiza, Roma y Atenas con nuestros cruceros Pullmantur</p>
-                    <p class="duracion">8 días, salida desde Barcelona, 11/08/2020</p>
+                    <p class="duracion">8 días, salida desde Barcelona.</p>
                     
                     <label class="datosreserva"> Fecha de entrada</label>
                         <input id="fecha_ini" type="date" class="select-date">
@@ -181,7 +183,7 @@
                     <img src="img/norwegian_cruceros2.jpg" class="imagen">
                     <h2>Europa del norte</h2>
                     <p class="descripcion">Descubre Oslo, Helsinki y Estocolmo con nuestros cruceros Norwegian</p>
-                    <p class="duracion">9 días, salida desde Cadiz, 11/08/2020</p>
+                    <p class="duracion">9 días, salida desde Cadiz.</p>
                     
                     <label class="datosreserva"> Fecha de entrada</label>
                         <input id="fecha_ini" type="date" class="select-date">
@@ -204,7 +206,7 @@
                     <img src="img/cruceros_norweigan.jpg" class="imagen">
                     <h2>Mar del norte</h2>
                     <p class="descripcion">Descubre Oslo, Copenhague, y Helsinki con nuestros cruceros Norwegian</p>
-                    <p class="duracion">9 días, salida desde Cadiz, 11/08/2020</p>
+                    <p class="duracion">9 días, salida desde Cadiz.</p>
                     
                     <label class="datosreserva"> Fecha de entrada</label>
                         <input id="fecha_ini" type="date" class="select-date">
@@ -227,7 +229,7 @@
                     <img src="img/costa_cruceros2.jpg" class="imagen">
                     <h2>Mediterraneo</h2>
                     <p class="descripcion">Descubre Ibiza, Niza, Roma y Napoles con nuestros cruceros Costa</p>
-                    <p class="duracion">8 días, salida desde Valencia, 11/08/2020</p>
+                    <p class="duracion">8 días, salida desde Valencia.</p>
                     
                     <label class="datosreserva"> Fecha de entrada</label>
                         <input id="fecha_ini" type="date" class="select-date">

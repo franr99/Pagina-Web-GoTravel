@@ -18,7 +18,8 @@
             session_start();
             $varsesion = $_SESSION['usuario'];
             $varnombre = $_SESSION['nombre'];
-            
+            $email = $_SESSION['email'];
+            $direccion = $_SESSION['direccion'];
             error_reporting(0);
             
         ?>
@@ -55,12 +56,17 @@
             <section class="info">
                 <h2>Información personal</h2>
                 <hr>
-                <article><span>Nombre: pichula </span> </article>
-                <article><span>Email: pichula@gmail.com </span> </article>
-                <article><span>Direccion: Tu culo </span> </article>
-                <button type="button" class="btnmodificar"> <span>Modificar datos</span></button>
-                <button type="button" class="btneliminar"> <span>Eliminar cuenta</span></button>
-
+                <article><span>Nombre: <?php echo $varnombre; ?> </span> </article>
+                <article><span>Email: <?php echo $email ?> </span> </article>
+                <article><span>Direccion: <?php echo $direccion ?> </span> </article>
+                <form action="conexiones/gestionPerfil.php" method="POST">
+                    <input type="hidden" name="modificar" value="1">
+                    <button type="button" class="btnmodificar" value="Modificar datos">
+                </form>
+                <form action="conexiones/gestionPerfil.php" method="POST">
+                    <input type="hidden" name="eliminar" value="1">
+                    <button type="button" class="btneliminar" value="Eliminar cuenta"> 
+                </form>
                 
 
             </section>

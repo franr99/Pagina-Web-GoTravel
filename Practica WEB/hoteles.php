@@ -60,8 +60,9 @@
                         <img src="img/hotel-berlin.jpg" class="imagen">
                         <h2>Meininger Berlin Airport</h2>
                         <p class="descripcion">El hotel se ubica en las inmediaciones del Aeropuerto Schönefeld: ideal para todos aquellos que desean hacer una breve escala en Berlín. Se llega al SXF en solo 5 minutos con el servicio de transporte público. </p>
-                        <form action="php/reservaHotel.php" method="POST">
-                            <input type="hidden" name="idHotel" value="Meininger Berlin Airport"/>  
+                        <form action="conexiones/reservaHotel.php" method="POST">
+                            <input type="hidden" name="destino" value="Berlin">
+                            <input type="hidden" name="compania" value="Meininger Berlin Airport"/>  
                             <label class="datosreserva"> Fecha de entrada</label>
                             <input id="fecha_ini" type="date" class="select-date" name="fecha_ini">
                             <label class="datosreserva"> Fecha de salida</label>

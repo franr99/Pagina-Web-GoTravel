@@ -49,8 +49,8 @@
 
         <section class="contenedor">
             <h2> Confirmar tu reserva</h2>
-                <h4 class="origen"> Origen </h4>
                 <form action="reservaDestino.php" method="POST">
+                <h4 class="origen"> Origen </h4>
                 <input type="hidden" name="funcion" value="1">
 				<input type="name" name="ciudadOrigen" class="form" value="<?php echo $arraySalida[$origen] ?>" readonly="readonly">
                 <h4> Destino </h4>
