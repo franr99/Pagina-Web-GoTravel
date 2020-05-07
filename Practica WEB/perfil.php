@@ -38,10 +38,7 @@
                     </ul>
                 </nav>
             </section>
-            <aside><a href="login.php"><button type="button" class="btnPerfil">  <?php if($varsesion == null || $varsesion == '')
-                                                                                            echo "Mi perfil";
-                                                                                        else
-                                                                                            echo $varnombre ?> </button></a></aside>
+            <aside><a href="conexiones/logout.php"><button type="button" class="btnPerfil"> Cerrar sesion</button></a></aside>
         </header>
 
         <main class="main">
