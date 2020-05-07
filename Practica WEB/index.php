@@ -23,7 +23,15 @@
         ?>
         <header class="header">
             <section class="container logo-nav-container">
-                <a href="#" class="logo"><img src="img/logo-bueno.png"></a>
+            <a href="#" class="logo"><img id="logo" src="img/logo-bueno.png"></a>
+                <canvas id="logo_canvas" width="420" height="120"> Este navegador no puede mostrar el contenido</canvas>
+                <script>
+                    var c = document.getElementById("logo_canvas");
+                    var ctx = c.getContext("2d");
+                    var img = document.getElementById("logo");
+                    ctx.drawImage(img, 5, 10,350,100);
+                </script>
+
                 <span class="menu-icon">Ver menú</span>
                 <nav class="navigation">
                     <ul>

@@ -43,6 +43,12 @@ p{
         text-decoration: none;
 }   
 
+#logo_canvas{
+
+    margin-right: 60%;
+
+}
+
 .logo-nav-container{
     display: flex; /* se acomodarse a diferentes tamaños de pantalla y diferentes dispositivos*/
     justify-content: space-between; /* distribuye el primer elemento en la primera linea y el ultimo en la ultima linea, los elementos del medios se separan a la misma distancia*/
@@ -51,8 +57,9 @@ p{
 }
 
 .logo img{
-    width: 80%;
-    height: 80%;
+    visibility: hidden;
+    width:1%;
+    height:1%;
 }
 
 .menu-icon{
