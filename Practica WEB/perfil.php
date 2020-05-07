@@ -16,11 +16,12 @@
     <body>
         <?php
             session_start();
+            error_reporting(0);
             $varsesion = $_SESSION['usuario'];
             $varnombre = $_SESSION['nombre'];
             $email = $_SESSION['email'];
             $direccion = $_SESSION['direccion'];
-            error_reporting(0);
+            
             
         ?>
         <header class="header">
@@ -59,13 +60,13 @@
                 <article><span>Nombre: <?php echo $varnombre; ?> </span> </article>
                 <article><span>Email: <?php echo $email ?> </span> </article>
                 <article><span>Direccion: <?php echo $direccion ?> </span> </article>
-                <form action="conexiones/gestionPerfil.php" method="POST">
-                    <input type="hidden" name="modificar" value="1">
-                    <button type="button" class="btnmodificar" value="Modificar datos">
+
+                <form action="conexiones/modificarPerfil.php" method="POST">
+                    <input type="submit" class="btnmodificar" value="Modificar datos">
                 </form>
                 <form action="conexiones/gestionPerfil.php" method="POST">
                     <input type="hidden" name="eliminar" value="1">
-                    <button type="button" class="btneliminar" value="Eliminar cuenta"> 
+                    <input type="submit" class="btneliminar" value="Eliminar cuenta"> 
                 </form>
                 
 
