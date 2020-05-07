@@ -78,7 +78,7 @@
                         <li><a href="https://www.civitatis.com/es/paris/paseo-barco-sena"><img src="img/paris-excur.webp"></a></li>
                         <li><a href="https://www.civitatis.com/es/nueva-york/excursion-washington"><img src="img/washington-excur.webp"></a></li>
                         <li><a href="https://www.civitatis.com/es/madrid/excursion-toledo-segovia"><img src="img/fachada-catedral-segovia.jpg"></a></li>
-                        <li><a href="https://www.civitatis.com/es/amsterdam/excursion-zaanse-schans-volendam-marken"><img src="img/paises-bajos-volendam"></a></li>
+                        <li><a href="https://www.civitatis.com/es/amsterdam/excursion-zaanse-schans-volendam-marken"><img src="img/paises-bajos-volendam.webp"></a></li>
                         
                     </ul>
 
@@ -177,8 +177,8 @@
                         <li><a href="https://www.culinaryspain.es/rutas-gastronomicas/rutas-gastronomicas-espana/barcelona-5-dias/"><img src="img/gastronomia_bar.jpg"></a></li>
                         <li><a href="https://www.culinaryspain.es/rutas-gastronomicas/rutas-gastronomicas-espana/madrid-gourmet-4-dias/"><img src="img/gastronomia_madrid.jpg"></a></li>
                         <li><a href="https://www.disfrutaberlin.com/actividades/tour-gastronomico-berlin"><img src="img/gastronomia_berlin.jpg"></a></li>
-                        <li><a href="https://www.civitatis.com/es/nueva-york/excursion-washington"><img src="img/washington-excur.webp"></a></li>
-                        <li><a href="https://www.civitatis.com/es/nueva-york/excursion-washington"><img src="img/washington-excur.webp"></a></li>
+                        <li><a href="https://www.civitatis.com/es/roma/tour-gastronomico-barrio-trastevere"><img src="img/trastevere.webp"></a></li>
+                        <li><a href="https://www.civitatis.com/es/tokio/tour-gastronomico-shibuya"><img src="img/sushi.webp"></a></li>
                         
                     </ul>
 
