@@ -23,13 +23,35 @@
         ?>
         <header class="header">
             <section class="container logo-nav-container">
-            <a href="#" class="logo"><img id="logo" src="img/logo-bueno.png"></a>
-                <canvas id="logo_canvas" width="420" height="120"> Este navegador no puede mostrar el contenido</canvas>
+                <canvas id="micanvas" width="410" height="110"> Este navegador no puede mostrar el contenido</canvas>
                 <script>
-                    var c = document.getElementById("logo_canvas");
-                    var ctx = c.getContext("2d");
-                    var img = document.getElementById("logo");
-                    ctx.drawImage(img, 5, 10,350,100);
+
+                function cargaContextoCanvas(idCanvas){
+                var elemento = document.getElementById(idCanvas);
+                if(elemento && elemento.getContext){
+                    var contexto = elemento.getContext('2d');
+                    if(contexto){
+                        return contexto;
+                    }
+                }
+                return FALSE;
+                }
+
+                window.onload = function(){
+                //Recibimos el elemento canvas
+                var ctx = cargaContextoCanvas('micanvas');
+                if(ctx){
+                    //Creo una imagen conun objeto Image de Javascript
+                    var img = new Image();
+                    //indico la URL de la imagen
+                    img.src = "img/logo-bueno.png";;
+                    //defino el evento onload del objeto imagen
+                    img.onload = function(){
+                        //incluyo la imagen en el canvas
+                        ctx.drawImage(img, 10, 10);
+                    }
+                }
+                }
                 </script>
 
                 <span class="menu-icon">Ver menú</span>

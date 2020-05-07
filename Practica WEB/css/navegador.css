@@ -20,7 +20,7 @@ p{
 }
 
 .main{
-    padding-top:10rem;
+    padding-top:5rem;
 }
 
 .slides{
@@ -28,6 +28,7 @@ p{
 }
 
 .header{
+    /*height: 10%;*/
     background: rgb(15, 207, 233);
     color:white;
     padding: 2rem 0;
@@ -54,12 +55,6 @@ p{
     justify-content: space-between; /* distribuye el primer elemento en la primera linea y el ultimo en la ultima linea, los elementos del medios se separan a la misma distancia*/
     align-items: center;
     flex-wrap: nowrap;
-}
-
-.logo img{
-    visibility: hidden;
-    width:1%;
-    height:1%;
 }
 
 .menu-icon{
@@ -194,7 +189,7 @@ aside .btnPerfil{
     float: right !important;
     margin-left: 0;
     margin-right: 3%;
-    margin-top: -3%;
+    margin-top: -4%;
     border-radius: 5px;
     border-color: transparent;
     background-color: #3498db;
