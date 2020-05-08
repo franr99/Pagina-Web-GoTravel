@@ -53,12 +53,12 @@
                     <h1> ¿Que te gustaría hacer? </h1>
 
                     <ul class="tours-iconos">
-                        <li><a href="#"><img src="img/icon-excur.png"></a></li>
-                        <li><a href="#"><img class ="img-cult" src="img/icon-cult.png"></a></li>
-                        <li><a href="#"><img src="img/icon-natur.png"></a></li>
-                        <li><a href="#"><img src="img/icon-arte.png"></a></li>
-                        <li><a href="#"><img src="img/icon-entretenimiento.png"></a></li>
-                        <li><a href="#"><img src="img/icon-gastronomia.png"></a></li>
+                        <li><a href="#1"><img src="img/icon-excur.png"></a></li>
+                        <li><a href="#2"><img class ="img-cult" src="img/icon-cult.png"></a></li>
+                        <li><a href="#3"><img src="img/icon-natur.png"></a></li>
+                        <li><a href="#4"><img src="img/icon-arte.png"></a></li>
+                        <li><a href="#5"><img src="img/icon-entretenimiento.png"></a></li>
+                        <li><a href="#6"><img src="img/icon-gastronomia.png"></a></li>
                     </ul>
                     
                 </article>
@@ -66,7 +66,7 @@
             </section>
 
 
-            <section class = "excursion"> 
+            <section class = "excursion" id="1"> 
                 <article class="titulo-excursion">
                     <img src ="img/icon-excur.png">
                     <h1> Excursiones </h1>
@@ -86,7 +86,7 @@
                                  
             </section>
 
-            <section class = "historia"> 
+            <section class = "historia" id="2"> 
                 <article class="titulo-historia">
                     <img class ="img-cult" src ="img/icon-cult.png">
                     <h1> Historia y cultura </h1>
@@ -106,7 +106,7 @@
                                  
             </section>
 
-            <section class = "aventura"> 
+            <section class = "aventura"id="3"> 
                 <article class="titulo-aventura">
                     <img src ="img/icon-natur.png">
                     <h1> Aventura y naturaleza</h1>
@@ -126,7 +126,7 @@
                                  
             </section>
 
-            <section class = "excursion"> 
+            <section class = "excursion"id="4"> 
                 <article class="titulo-excursion">
                     <img src ="img/icon-arte.png">
                     <h1> Arte y pintura</h1>
@@ -146,7 +146,7 @@
                                  
             </section>
 
-            <section class = "entretenimiento"> 
+            <section class = "entretenimiento" id="5"> 
                 <article class="titulo-entretenimiento">
                     <img src ="img/icon-entretenimiento.png">
                     <h1> Entretenimieto</h1>
@@ -166,7 +166,7 @@
                                  
             </section>
 
-            <section class = "excursion"> 
+            <section class = "excursion" id="6"> 
                 <article class="titulo-excursion">
                     <img src ="img/icon-gastronomia.png">
                     <h1> Gastronomía</h1>

@@ -47,7 +47,7 @@
             <article class="buscador-hotel">
                 
                 <input type="text" class="caja-buscador" placeholder="Ciudad, zona o nombre del alojamiento">
-                <button type="button" class="boton-hotel"> Buscar hoteles</button>
+                <button type="button" class="boton-hotel" > Buscar hoteles</button>
                 
             </article>
 

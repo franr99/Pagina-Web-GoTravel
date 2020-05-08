@@ -8,6 +8,10 @@ body{
     
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .fondoMenu{
     
     width: 100%;
@@ -70,19 +74,23 @@ body{
 
 
 
-.excursion{
+.excursion{	
+    margin-top: 10%;
     margin-bottom: 5%;
 }
 
 .historia{
+	margin-top: 10%;
     margin-bottom: 5%
 }
 
 .aventura{
+	margin-top: 10%;
     margin-bottom: 5%
 }
 
 .entretenimiento{
+	margin-top: 10%;
     margin-bottom: 5%
 }
 .excursion .titulo-excursion{
@@ -119,12 +127,9 @@ body{
         display: inline-block;
         text-decoration: none;
         list-style: none;
-        width: 220px;
-        height: 170px;
+        
     }
         .contenido li img{
-            width: 220px;
-            height: 170px;
             padding: 0.5rem 1rem;
             transition: all 0.2s linear;
             text-decoration: none;
@@ -162,6 +167,7 @@ body{
         .contenedor{
         
              background-color: #F5F0EE;
+		height: 15.7em;
         
         }
         
@@ -170,13 +176,14 @@ body{
             display: inline-block;
             text-decoration: none;
             list-style: none;
-            width: 220px;
-            height: 170px;
+            
         }
         .contenido li img{
-            width: 220px;
-            height: 170px;
+            width: 370px;
+            height: 250px;
             padding: 0.5rem 1rem;
+	    padding-left:3.5rem;
+		padding-right:-8em;
             transition: all 0.2s linear;
             text-decoration: none;
             list-style: none;
