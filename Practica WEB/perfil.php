@@ -15,12 +15,15 @@
     </head>
     <body>
         <?php
+            include('conexiones/conexion.php');
+            $link = conectar();
             session_start();
             error_reporting(0);
             $varsesion = $_SESSION['usuario'];
             $varnombre = $_SESSION['nombre'];
             $email = $_SESSION['email'];
             $direccion = $_SESSION['direccion'];
+            $id = $_SESSION['id'];
             
             
         ?>
@@ -74,8 +77,41 @@
                 <hr>
 
                 <article>
-                    <img src="img/foto-reserva.png">
-                    <h2> No has reservado aún</h2>
+                <table class="tabla_reservas">
+                    <tr>
+                        <td> Compañia </td>
+                        <td> Datos reserva </td>
+                        <td> Origen </td>
+                        <td> Destino </td>
+                        <td> Fecha salida </td>
+                        <td> Fecha vuelta </td>
+                    </tr>
+<?php
+                    $qryReserva = "SELECT * FROM Reserva WHERE id_usuario = '" .$id. "'";
+                    $rscReserva = mysqli_query($link, $qryReserva);
+                    $filas = mysqli_num_rows($rscReserva);
+                    if($filas >0){
+                        while($mostrar = mysqli_fetch_array($rscReserva)){
+?>
+                        <tr>
+                            <td><?php echo $mostrar['compania'] ?></td>
+                            <td><?php echo $mostrar['tipo_reserva'] ?></td>
+                            <td><?php echo $mostrar['origen'] ?></td>
+                            <td><?php echo $mostrar['destino'] ?></td>
+                            <td><?php echo $mostrar['fecha_ini'] ?></td>
+                            <td><?php echo $mostrar['fecha_fin'] ?></td>
+                        </tr>
+<?php
+                        }                        
+                         
+                    }else{
+?>
+                        <img src="img/foto-reserva.png">
+                        <h2> No has reservado aún</h2>
+<?php
+                    }
+?>            
+                </table>
                 </article>
             </section>
 

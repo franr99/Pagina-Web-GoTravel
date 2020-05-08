@@ -22,7 +22,7 @@
         $fecha_ini = $_POST['fecha_ini'];
         $fecha_fin = $_POST['fecha_fin'];
         $compania = $_POST['compania'];
-        $tipo_compania = "null";
+        $tipo_compania = "vuelo";
 
         $arraySalida = array("Madrid","Barcelona","Sevilla","Valencia","Cadiz","Bilbao");
         $arrayCompania = array("Ryanair","Vueling","Iberia","Air Europa");
