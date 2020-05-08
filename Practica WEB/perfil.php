@@ -78,41 +78,32 @@
 
                 <article>
                 <table class="tabla_reservas">
+                    <tr>
+                        <td> Compañia </td>
+                        <td> Datos reserva </td>
+                        <td> Origen </td>
+                        <td> Destino </td>
+                        <td> Fecha salida </td>
+                        <td> Fecha vuelta </td>
+                    </tr>
 <?php
-                    $qryLogin = sprintf("SELECT * FROM Reserva WHERE id_usuario = '" .$id. "'");
-                    $rscLogin = mysqli_query($link, $qryLogin);
-                    $filas = mysqli_num_rows($rscLogin);
+                    $qryReserva = "SELECT * FROM Reserva WHERE id_usuario = '" .$id. "'";
+                    $rscReserva = mysqli_query($link, $qryReserva);
+                    $filas = mysqli_num_rows($rscReserva);
                     if($filas >0){
+                        while($mostrar = mysqli_fetch_array($rscReserva)){
 ?>
                         <tr>
-                            <th> Compañia </th>
-                            <th> Datos reserva </th>
-                            <th> Origen </th>
-                            <th> Destino </th>
-                            <th> Fecha salida </th>
-                            <th> Fecha vuelta </th>
-
+                            <td><?php echo $mostrar['compania'] ?></td>
+                            <td><?php echo $mostrar['tipo_reserva'] ?></td>
+                            <td><?php echo $mostrar['origen'] ?></td>
+                            <td><?php echo $mostrar['destino'] ?></td>
+                            <td><?php echo $mostrar['fecha_ini'] ?></td>
+                            <td><?php echo $mostrar['fecha_fin'] ?></td>
+                        </tr>
 <?php
-                        for($i=0; $i < $filas; $i++){
-                            $fila = $rscLogin->fetch_row();
-                            $compania = $fila[1];
-                            $tipo_reserva = $fila[2];
-                            $origen = $fila[3];
-                            $destino = $fila[4];
-                            $fecha_ini = $fila[5];
-                            $fecha_fin = $fila[6];
-?>
-                            <tr>
-                                <td><?php $compania ?></td>
-                                <td><?php $tipo_reserva ?></td>
-                                <td><?php $origen ?></td>
-                                <td><?php $destino ?></td>
-                                <td><?php $fecha_ini ?></td>
-                                <td><?php $fecha_fin ?></td>
-                            </tr>
-<?php                          
-                        }
-                               
+                        }                        
+                         
                     }else{
 ?>
                         <img src="img/foto-reserva.png">
@@ -120,6 +111,7 @@
 <?php
                     }
 ?>            
+                </table>
                 </article>
             </section>
 
