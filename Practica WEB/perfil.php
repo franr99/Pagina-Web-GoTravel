@@ -15,12 +15,15 @@
     </head>
     <body>
         <?php
+            include('conexiones/conexion.php');
+            $link = conectar();
             session_start();
             error_reporting(0);
             $varsesion = $_SESSION['usuario'];
             $varnombre = $_SESSION['nombre'];
             $email = $_SESSION['email'];
             $direccion = $_SESSION['direccion'];
+            $id = $_SESSION['id'];
             
             
         ?>
@@ -74,8 +77,49 @@
                 <hr>
 
                 <article>
-                    <img src="img/foto-reserva.png">
-                    <h2> No has reservado aún</h2>
+                <table class="tabla_reservas">
+<?php
+                    $qryLogin = sprintf("SELECT * FROM Reserva WHERE id_usuario = '" .$id. "'");
+                    $rscLogin = mysqli_query($link, $qryLogin);
+                    $filas = mysqli_num_rows($rscLogin);
+                    if($filas >0){
+?>
+                        <tr>
+                            <th> Compañia </th>
+                            <th> Datos reserva </th>
+                            <th> Origen </th>
+                            <th> Destino </th>
+                            <th> Fecha salida </th>
+                            <th> Fecha vuelta </th>
+
+<?php
+                        for($i=0; $i < $filas; $i++){
+                            $fila = $rscLogin->fetch_row();
+                            $compania = $fila[1];
+                            $tipo_reserva = $fila[2];
+                            $origen = $fila[3];
+                            $destino = $fila[4];
+                            $fecha_ini = $fila[5];
+                            $fecha_fin = $fila[6];
+?>
+                            <tr>
+                                <td><?php $compania ?></td>
+                                <td><?php $tipo_reserva ?></td>
+                                <td><?php $origen ?></td>
+                                <td><?php $destino ?></td>
+                                <td><?php $fecha_ini ?></td>
+                                <td><?php $fecha_fin ?></td>
+                            </tr>
+<?php                          
+                        }
+                               
+                    }else{
+?>
+                        <img src="img/foto-reserva.png">
+                        <h2> No has reservado aún</h2>
+<?php
+                    }
+?>            
                 </article>
             </section>
 
