@@ -16,7 +16,6 @@
 				<input type="dir" name="direccion" maxlength="50" class="form" placeholder="direccion" required>
                 <input type="email" name="email" maxlength="20" class="form" placeholder="email" required>
 				<input type="password" name="contra" maxlength="50" class="form" placeholder="contraseña" required>
-				<input type="password" name="contra" maxlength="50" class="form" placeholder="confirmar contraseña" required>
                 <input type="submit" class="btnLogin" value="Registrarse">
             </form>
         </section>
