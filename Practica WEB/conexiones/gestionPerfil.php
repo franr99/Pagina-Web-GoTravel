@@ -27,7 +27,7 @@
 
         $qryDelete = "DELELTE FROM Cliente where id = '$id'";
         $rscDelete = mysqli_query($link, $qryDelete);
-        if($rscUpdate){
+        if($rscDelete){
             session_destroy();
             Header( "Location: http://localhost/Practica%20WEB/index.php");
         }else{

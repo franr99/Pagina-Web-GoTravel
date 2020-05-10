@@ -24,7 +24,8 @@
             $email = $_SESSION['email'];
             $direccion = $_SESSION['direccion'];
             $id = $_SESSION['id'];
-            
+            $id_reserva = array();
+            $i = 0;
             
         ?>
         <header class="header">
@@ -78,6 +79,7 @@
 
                 <article>
                 <table class="tabla_reservas">
+                <thead>
                     <tr>
                         <td> Compañia </td>
                         <td> Datos reserva </td>
@@ -85,7 +87,10 @@
                         <td> Destino </td>
                         <td> Fecha salida </td>
                         <td> Fecha vuelta </td>
+                        <td> Modificar reserva </td>
+                        <td> Eliminar reserva </td>
                     </tr>
+                </thead>
 <?php
                     $qryReserva = "SELECT * FROM Reserva WHERE id_usuario = '" .$id. "'";
                     $rscReserva = mysqli_query($link, $qryReserva);
@@ -100,6 +105,24 @@
                             <td><?php echo $mostrar['destino'] ?></td>
                             <td><?php echo $mostrar['fecha_ini'] ?></td>
                             <td><?php echo $mostrar['fecha_fin'] ?></td>
+                            <td>
+                                <form action="conexiones/modificarReserva.php" method="POST">
+                                <input type="hidden" name="id_reserva" value="<?php $mostrar['id_reserva'];?>">
+                                <input type="hidden" name="compania" value="<?php $mostrar['compania'];?>">
+                                <input type="hidden" name="tipo_reserva" value="<?php $mostrar['tipo_reserva'];?>">
+                                <input type="hidden" name="origen" value="<?php $mostrar['origen'];?>">
+                                <input type="hidden" name="destino" value="<?php $mostrar['destino'];?>">
+                                <input type="hidden" name="fecha_ini" value="<?php $mostrar['fecha_ini'];?>">
+                                <input type="hidden" name="fecha_fin" value="<?php $mostrar['fecha_fin'];?>">
+                                <input type="submit" class="modificarRes" value="Modificar Reserva"> 
+                                </form>
+                            </td>
+                            <td>
+                                <form action="conexiones/gestionReserva.php" method="POST">
+                                <input type="hidden" name="eliminar" value="<?php echo $mostrar['id_reserva'];?>">
+                                <input type="submit" class="eliminarRes" value="Eliminar Reserva"> 
+                                </form>
+                            </td>
                         </tr>
 <?php
                         }                        
