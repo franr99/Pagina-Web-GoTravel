@@ -107,13 +107,13 @@
                             <td><?php echo $mostrar['fecha_fin'] ?></td>
                             <td>
                                 <form action="conexiones/modificarReserva.php" method="POST">
-                                <input type="hidden" name="id_reserva" value="<?php $mostrar['id_reserva'];?>">
-                                <input type="hidden" name="compania" value="<?php $mostrar['compania'];?>">
-                                <input type="hidden" name="tipo_reserva" value="<?php $mostrar['tipo_reserva'];?>">
-                                <input type="hidden" name="origen" value="<?php $mostrar['origen'];?>">
-                                <input type="hidden" name="destino" value="<?php $mostrar['destino'];?>">
-                                <input type="hidden" name="fecha_ini" value="<?php $mostrar['fecha_ini'];?>">
-                                <input type="hidden" name="fecha_fin" value="<?php $mostrar['fecha_fin'];?>">
+                                <input type="hidden" name="id_reserva" value="<?php echo $mostrar['id_reserva'];?>">
+                                <input type="hidden" name="compania" value="<?php echo $mostrar['compania'];?>">
+                                <input type="hidden" name="tipo_reserva" value="<?php echo $mostrar['tipo_reserva'];?>">
+                                <input type="hidden" name="origen" value="<?php echo $mostrar['origen'];?>">
+                                <input type="hidden" name="destino" value="<?php echo $mostrar['destino'];?>">
+                                <input type="hidden" name="fecha_ini" value="<?php echo $mostrar['fecha_ini'];?>">
+                                <input type="hidden" name="fecha_fin" value="<?php echo $mostrar['fecha_fin'];?>">
                                 <input type="submit" class="modificarRes" value="Modificar Reserva"> 
                                 </form>
                             </td>
