@@ -22,7 +22,7 @@
     
     <?php
         }
-        if($registro=='1'){
+        else if($registro=='1'){
     ?>
         <script> alert("Usuario registrado correctamente") </script>
 

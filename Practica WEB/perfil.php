@@ -94,8 +94,7 @@
                 <form action="conexiones/modificarPerfil.php" method="POST">
                     <input type="submit" class="btnmodificar" value="Modificar datos">
                 </form>
-                <form action="conexiones/gestionPerfil.php" method="POST">
-                    <input type="hidden" name="eliminar" value="1">
+                <form action="conexiones/eliminarPerfil.php" method="POST">
                     <input type="submit" class="btneliminar" value="Eliminar cuenta"> 
                 </form>
                 
