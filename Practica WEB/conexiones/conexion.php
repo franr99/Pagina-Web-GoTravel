@@ -11,8 +11,7 @@ $link = mysqli_connect ($server, $user, $pass, $database)
 	or die("Imposible conectar con $server");
 
 if ($link)
-   print ("Conexi&oacute;n Realizada con &eacute;xito"); 
-
+   
    return $link;
 }
 

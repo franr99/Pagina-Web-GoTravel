@@ -131,12 +131,12 @@
             
             <ul class="ciudad-destino">
                 <h1> Destinos destacados</h1>
-                <li><a href="#"><img src="img/tokyo_des.jpg"></a><h4> Tokyo</h4></li>
-                <li><a href="#"><img src="img/paris_des.jpg"></a><h4> Paris</h4></li>
-                <li><a href="#"><img src="img/new_york_des.jpg"></a><h4> New York</h4></li>
-                <li><a href="#"><img src="img/londres_des.jpg"></a><h4> Londres</h4></li>
-                <li><a href="#"><img src="img/cracovia_des.jpg"></a><h4> Cracovia</h4></li>
-                <li><a href="#"><img src="img/berlin_des.jpg"></a><h4> Berlin</h4></li>
+                <li><a href="destinos.php"><img src="img/tokyo_des.jpg"></a><h4> Tokyo</h4></li>
+                <li><a href="destinos.php"><img src="img/paris_des.jpg"></a><h4> Paris</h4></li>
+                <li><a href="destinos.php"><img src="img/new_york_des.jpg"></a><h4> New York</h4></li>
+                <li><a href="destinos.php"><img src="img/londres_des.jpg"></a><h4> Londres</h4></li>
+                <li><a href="destinos.php"><img src="img/cracovia_des.jpg"></a><h4> Cracovia</h4></li>
+                <li><a href="destinos.php"><img src="img/berlin_des.jpg"></a><h4> Berlin</h4></li>
             </ul>
         
           

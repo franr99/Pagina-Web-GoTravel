@@ -155,7 +155,6 @@
                                     </form>
                                 </td>
                             </tr>
-                        </table>
 <?php
                         }                        
                          
@@ -165,8 +164,9 @@
                         <h2> No has reservado aún</h2>
 <?php
                     }
+                    
 ?>            
-                
+                    </table>
                 </article>
             </section>
 

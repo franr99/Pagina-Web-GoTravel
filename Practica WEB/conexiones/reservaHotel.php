@@ -16,6 +16,7 @@
     include('conexion.php');
     $link = conectar();
 
+        error_reporting(0);
         $destino = $_POST['destino'];
         $compania = $_POST['compania'];
         $fecha_ini = $_POST['fecha_ini'];
