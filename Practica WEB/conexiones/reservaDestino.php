@@ -48,7 +48,7 @@
     ?>
 
         <section class="contenedor">
-            <h2> Confirmar tu reserva</h2>
+            
                 <form action="reservaDestino.php" method="POST">
                 <h4 class="origen"> Origen </h4>
                 <input type="hidden" name="funcion" value="1">
