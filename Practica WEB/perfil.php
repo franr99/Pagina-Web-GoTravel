@@ -94,10 +94,19 @@
                 <form action="conexiones/modificarPerfil.php" method="POST">
                     <input type="submit" class="btnmodificar" value="Modificar datos">
                 </form>
-                <form action="conexiones/eliminarPerfil.php" method="POST">
+                <form action="conexiones/eliminarPerfil.php" method="POST" onsubmit="return confirmation()">
                     <input type="submit" class="btneliminar" value="Eliminar cuenta"> 
                 </form>
-                
+
+                <script>
+                    function confirmation() {
+                        if(confirm("Esta seguro que desea eliminar su cuenta en GoTravel?")){
+                            return true;
+                            }else{
+                            return false;
+                            }
+                            }
+                </script>
 
             </section>
 
