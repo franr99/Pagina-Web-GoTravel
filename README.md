@@ -1,5 +1,5 @@
 # GoTravel 🚀 
-Página web realizada para la asignatura de Programación web del grado de Ingeniería Informática en la UCAM
+Aplicación web sobre una agencia de viajes realizada para la asignatura de Programación web del grado de Ingeniería Informática en la UCAM
 
 ## Tecnologías 🛠️ 
 * Front-end : HTML, CSS, Javascript 
