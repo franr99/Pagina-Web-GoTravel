@@ -3,10 +3,10 @@ Página web realizada para la asignatura de Programación web del grado de Ingen
 
 ## Tecnologías 🛠️ 
 * Front-end : HTML, CSS, Javascript 
-* Back-end : PHP
+* Back-end : PHP, XAMPP
 * Codificado en Visual Studio Code
 
-## Video de demostración ⌨️ 
+## Video de demostración 🖥️
 https://www.youtube.com/watch?v=7MSY0veVUkU&ab_channel=FranciscoRosasdelOlmo
 
 ## Autores ✒️ 
