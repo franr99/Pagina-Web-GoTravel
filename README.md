@@ -4,7 +4,6 @@ Aplicación web sobre una agencia de viajes realizada para la asignatura de Prog
 ## Tecnologías 🛠️ 
 * Front-end : HTML, CSS, Javascript 
 * Back-end : PHP, XAMPP
-* Codificado en Visual Studio Code
 
 ## Video de demostración 🖥️
 https://www.youtube.com/watch?v=7MSY0veVUkU&ab_channel=FranciscoRosasdelOlmo
